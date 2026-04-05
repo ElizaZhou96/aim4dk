@@ -12,9 +12,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
 
-body {
+/* body {
   cursor: url("/heart.png") 32 32, auto;
-}
+} */
 
 .accessibility body {
   font-size: 1.25rem;
