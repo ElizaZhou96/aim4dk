@@ -107,7 +107,7 @@ function App() {
 	    <div className="mt-10">
 		  <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden border border-red-900/40 shadow-[0_20px_80px_rgba(120,20,20,0.35)]">
 		    <img
-		      src="/A.png"
+		      src="/aim4dk.png"
 		      alt="AIM4DK banner"
 		      className="w-full h-[420px] md:h-[500px] object-cover"
 		    />
