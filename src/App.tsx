@@ -33,12 +33,12 @@ function App() {
   <React.Fragment>
     <RippleEffect />   {/* FluidEffect */}
 
-    <div className="min-h-screen bg-[#f4eff8]">
+    <div className="min-h-screen bg-gradient-to-b from-black via-[#140909] to-[#1a0d0d] text-white">
       {/* Navigation Bar */}
-      <nav className="bg-white shadow-md sticky top-0 z-50">
+      <nav className="bg-black/80 backdrop-blur-md border-b border-red-900/40 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            <div className="flex items-center text-[#77428D] font-semibold text-xl">
+            <div className="flex items-center text-[#D94A38] font-semibold text-xl">
               {/* <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />EmpAI @FG 2026 */}
 			  {/* <Candy className="inline w-6 h-6 text-[#77428D] animate-pulse mr-2" /> */}
 			  <img
@@ -66,7 +66,7 @@ function App() {
               </a>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="block md:hidden p-2 text-[#77428D] hover:text-[#c5b3db] transition-colors duration-200"
+                className="block md:hidden p-2 text-[#D94A38] hover:text-white transition-colors duration-200"
                 aria-label="Toggle menu"
               >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -92,35 +92,29 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-[#77428D] mb-4">
-            AI Modeling for Disappearing Knowledge (AIM4DK)
-          </h1>
-          
-          <p className="text-lg text-gray-600 mb-8">
-            Reliable AI in a Challenging World
-            <br /><strong className="font-bold text-gray-800"> 📅 August 15/16/17, 2026 (TBA) </strong>  📍Bremen, Germany
-          </p>
-          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <FeatureCard
-              title="Cross-Disciplinary Innovation"
-              description="Exploring techniques from human perception to real action"
-              image="https://images.pexels.com/photos/19802194/pexels-photo-19802194.jpeg"
-            />
-            <FeatureCard
-              title="Keynotes & Presentations Sessions"
-              description="Excellent keynotes and contributed/lightning talks for better understanding"
-              image="https://images.pexels.com/photos/7097530/pexels-photo-7097530.jpeg"
-            />
-            <FeatureCard
-              title="Networking"
-              description="Early-stage researchers, experts, and the general public brainstorm together"
-              image="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
-            />
-          </div> */}
-        </div>
-      </section>
+	<section id="home" className="w-full px-4 sm:px-6 lg:px-8 py-20 md:py-24 bg-gradient-to-b from-black via-[#160909] to-transparent">
+	  <div className="max-w-7xl mx-auto text-center">
+	    <h1 className="text-4xl md:text-5xl font-bold text-[#E14B3B] mb-4">
+	      AI Modeling for Disappearing Knowledge (AIM4DK)
+	    </h1>
+	
+	    <p className="text-lg text-gray-300 mb-8">
+	      Reliable AI in a Challenging World
+	      <br />
+	      <strong className="font-bold text-white">📅 August 15/16/17, 2026 (TBA)</strong> 📍Bremen, Germany
+	    </p>
+	
+	    <div className="mt-10">
+		  <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden border border-red-900/40 shadow-[0_20px_80px_rgba(120,20,20,0.35)]">
+		    <img
+		      src="/A.png"
+		      alt="AIM4DK banner"
+		      className="w-full h-[420px] md:h-[500px] object-cover"
+		    />
+		  </div>
+		</div>
+	  </div>
+	</section>
 
       {/* About Section */}
       <section id="about" className="bg-white py-16">
