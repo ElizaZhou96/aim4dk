@@ -95,14 +95,14 @@ function App() {
       <section id="home" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-[#77428D] mb-4">
-            Empathic AI: Face, Gesture, and Accessibility Technologies
+            AI Modeling for Disappearing Knowledge (AIM4DK)
           </h1>
           
           <p className="text-lg text-gray-600 mb-8">
-            Understanding Imperfect Humans Perfectly
-            <br /><strong className="font-bold text-gray-800"> 📅 May 25 Afternoon, 2026 </strong>  📍Kyoto, Japan
+            Reliable AI in a Challenging World
+            <br /><strong className="font-bold text-gray-800"> 📅 August 15/16/17, 2026 (TBA) </strong>  📍Bremen, Germany
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard
               title="Cross-Disciplinary Innovation"
               description="Exploring techniques from human perception to real action"
@@ -118,7 +118,7 @@ function App() {
               description="Early-stage researchers, experts, and the general public brainstorm together"
               image="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -321,8 +321,8 @@ function App() {
       {/* Speaker Section */}
       <section id="speaker" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Invited Speakers</h2>
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Invited Speakers (TBA)</h2>
+          {/* <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
 			<SpeakerCard
               name="Tadahiro Taniguchi"
               role="Kyoto University, Japan"
@@ -396,7 +396,7 @@ function App() {
 			  bio="Jiaqing Liu received the B.E. degree in 2016 from Northeastern University, China, and the M.E. and the D.E. degree in 2018 and 2021, both from Ritsumeikan University, Shiga, Japan. From 2020 to 2021, he was a JSPS Research Fellow for Young Scientists. From October 2021 to March 2022, he served as a Specially Appointed Assistant Professor with the Department of Intelligent Media, ISIR, Osaka University, Osaka, Japan. He is currently an Assistant Professor in the College of Information Science and Engineering, Ritsumeikan University, Osaka, Japan. His research interests include computer vision, medical engineering, deep learning and multimodal interaction."
 			  
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -404,7 +404,7 @@ function App() {
       <section id="organizer" className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Organizers</h2>
-		  <div className="grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-5 gap-8 items-stretch">
+		  <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 items-stretch">
             <OrganizerCard
               name="Yutong Zhou"
               role="Leibniz Centre for Agricultural Landscape Research, Germany"
@@ -412,28 +412,16 @@ function App() {
               website="https://elizazhou96.github.io/"
             />
 			<OrganizerCard
-              name="Von Ralph Dane Marquez Herbuela"
-              role="The University of Tokyo, Japan"
-              image="/vonralph.png"
-              website="https://developmental-robotics.jp/en/members/von_ralph_dane_marquez_herbuela/"
+              name="Yukyung Lee"
+              role="Boston University, USA"
+              image="/girl.png"
+              website="https://yukyunglee.com/"
             />
 			<OrganizerCard
-              name="Haifeng Zhang"
-              role="The University of Tokyo, Japan"
-              image="/haifeng.png"
-              website="https://developmental-robotics.jp/en/members/haifeng_zhang/"
-            />
-			<OrganizerCard
-              name="Mariza Ferro"
-              role="Fluminense Federal University, Brazil"
-              image="/mariza.png"
-              website="http://profs.ic.uff.br/~marizaferro/"
-            />
-			<OrganizerCard
-              name="Nobutaka Shimada"
-              role="Ritsumeikan University, Japan"
-              image="/nobutaka.jpg"
-              website="https://www.i.ci.ritsumei.ac.jp/wp/en/"
+              name="Humaira Kousar"
+              role="KAIST, South Korea"
+              image="/girl.png"
+              website="https://www.linkedin.com/in/humaira-kousar-32b775136/"
             />
           </div>
         </div>
@@ -444,8 +432,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Review</h2>
 		   
-			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
-            <p className="text-gray-600 mb-4">
+			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee (TBA)</h3>
+            {/* <p className="text-gray-600 mb-4">
             {/* <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2"> */}
 			<ul className="text-gray-600 mb-4 grid grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside">
 				<li>Jiaqing Liu (Ritsumeikan University) </li>
@@ -474,7 +462,7 @@ function App() {
 				<li>Stefano	Berretti (University of Florence) </li>
 				<li>Lijun Yin (State University of New York at Binghamton) </li>
 			  </ul>
-            </p>
+            </p> */}
         </div>
       </section>
 
