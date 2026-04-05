@@ -109,7 +109,7 @@ function App() {
 		    <img
 		      src="/aim4dk.png"
 		      alt="AIM4DK banner"
-		      className="w-full h-[420px] md:h-[500px] object-cover"
+		      className="w-full h-[320px] object-cover"
 		    />
 		  </div>
 		</div>
