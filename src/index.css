@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  cursor: url("/heart.png") 32 32, auto;
+}
+
+.accessibility body {
+  font-size: 1.25rem;
+  filter: contrast(120%) brightness(110%);
+  line-height: 1.6;
+}
+
+.accessibility button {
+  font-weight: bold;
+  border: 2px solid #d9c6e6 !important;
+  background-color: #e2d4ec !important;
+}
+
+.accessibility a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.accessibility h1, 
+.accessibility h2, 
+.accessibility h3 {
+  font-weight: 700;
+  color: #B481BB !important;
+}
+
+.accessibility .bg-white {
+  background-color: #fefefe !important;
+  border: 1px solid #ddd !important;
+}
+
+.accessibility .text-gray-600,
+.accessibility .text-gray-700 {
+  color: #333 !important;
+  font-weight: 500;
+}
