@@ -42,7 +42,7 @@ function App() {
               {/* <Candy className="inline w-5 h-5 text-[#77428D] animate-bounce mr-2" />EmpAI @FG 2026 */}
 			  {/* <Candy className="inline w-6 h-6 text-[#77428D] animate-pulse mr-2" /> */}
 			  <img
-			    src="/Logo3.jpg"
+			    src="/aim4dk_logo.png"
 			    alt="Logo"
 			    className="h-14 w-auto"
 			  />
@@ -59,9 +59,9 @@ function App() {
             <div className="flex items-center space-x-4">
               <a href="https://fg2026.ieee-biometrics.org/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
                 <img
-                  src="/fg26_logo.png"
+                  src="/ijcai26_logo.png"
                   className="w-21 h-8 object-cover cursor-pointer hover:scale-105 transition-transform duration-200"
-                  alt="FG 2026 Logo"
+                  alt="IJCAI-ECAI 2026 Logo"
                 />
               </a>
               <button
@@ -323,7 +323,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Invited Speakers</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-			<SpeakerCard
+			{/* <SpeakerCard
               name="Tadahiro Taniguchi"
               role="Kyoto University, Japan"
               image="/tadahiro.jpeg"
@@ -395,7 +395,7 @@ function App() {
 			  title="Interpretable Multimodal Depression Detection via LLM-Based Reasoning"
 			  bio="Jiaqing Liu received the B.E. degree in 2016 from Northeastern University, China, and the M.E. and the D.E. degree in 2018 and 2021, both from Ritsumeikan University, Shiga, Japan. From 2020 to 2021, he was a JSPS Research Fellow for Young Scientists. From October 2021 to March 2022, he served as a Specially Appointed Assistant Professor with the Department of Intelligent Media, ISIR, Osaka University, Osaka, Japan. He is currently an Assistant Professor in the College of Information Science and Engineering, Ritsumeikan University, Osaka, Japan. His research interests include computer vision, medical engineering, deep learning and multimodal interaction."
 			  
-            />
+            /> */}
           </div>
         </div>
       </section>
@@ -405,7 +405,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Organizers</h2>
 		  <div className="grid grid-cols-1 sm:grid-cols-5 lg:grid-cols-5 gap-8 items-stretch">
-            <OrganizerCard
+            {/* <OrganizerCard
               name="Yutong Zhou"
               role="Leibniz Centre for Agricultural Landscape Research, Germany"
               image="/yutong.png"
@@ -434,7 +434,7 @@ function App() {
               role="Ritsumeikan University, Japan"
               image="/nobutaka.jpg"
               website="https://www.i.ci.ritsumei.ac.jp/wp/en/"
-            />
+            /> */}
           </div>
         </div>
       </section>
@@ -442,7 +442,7 @@ function App() {
       {/* Review Section */}
       <section id="review" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Review</h2>
+          {/* <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Review</h2>
 		   
 			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee</h3>
             <p className="text-gray-600 mb-4">
@@ -474,7 +474,7 @@ function App() {
 				<li>Stefano	Berretti (University of Florence) </li>
 				<li>Lijun Yin (State University of New York at Binghamton) </li>
 			  </ul>
-            </p>
+            </p> */}
         </div>
       </section>
 
@@ -484,7 +484,7 @@ function App() {
     <h2 className="text-3xl font-bold text-[#77428D] mb-8 text-center">Contact Us</h2>
 
     <form
-      action="https://formspree.io/f/mvzzgbww"
+      action="https://formspree.io/f/xvzvdgvy"
       method="POST"
       className="bg-[#f4eff8] w-full shadow-lg rounded-2xl p-6 sm:p-8 space-y-6"
     >
@@ -546,7 +546,7 @@ function App() {
             <p>© Copyright Yutong Zhou. All rights reserved.</p>
 			<div className="flex gap-5 mt-4 mb-3">
 
-			  {/* Twitter / X */}
+			  /* {/* Twitter / X */}
 			  <a
 			    href="https://x.com/EmpAI342560"
 			    target="_blank"
@@ -558,7 +558,7 @@ function App() {
 			      <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.69 4.69 0 002.048-2.591 9.39 9.39 0 01-2.976 1.137A4.684 4.684 0 0016.616 3c-2.63 0-4.756 2.128-4.756 4.756 0 .37.04.73.12 1.075-3.95-.2-7.45-2.09-9.79-4.97a4.74 4.74 0 00-.645 2.39c0 1.64.84 3.09 2.12 3.94a4.67 4.67 0 01-2.155-.595v.06c0 2.29 1.63 4.2 3.79 4.63a4.7 4.7 0 01-2.15.08c.6 1.88 2.35 3.25 4.42 3.29A9.4 9.4 0 010 19.54a13.27 13.27 0 007.19 2.11c8.63 0 13.35-7.15 13.35-13.35 0-.2 0-.4-.02-.6a9.5 9.5 0 002.32-2.43z"/>
 			    </svg> */}
 				<svg role="img" className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
-			  </a>
+			  </a> */
 			
 			  {/* LinkedIn */}
 			  {/* <a
