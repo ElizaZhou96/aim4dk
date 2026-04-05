@@ -434,7 +434,6 @@ function App() {
 		   
 			<h3 className="text-xl font-semibold text-[#77428D] mb-4">Program Commitee (TBA)</h3>
             {/* <p className="text-gray-600 mb-4">
-            {/* <ul className="text-gray-600 mb-4 list-disc list-inside space-y-2"> */}
 			<ul className="text-gray-600 mb-4 grid grid-cols-2 gap-x-8 gap-y-2 list-disc list-inside">
 				<li>Jiaqing Liu (Ritsumeikan University) </li>
 				<li>Naser Damer (TU Darmstadt) </li>
