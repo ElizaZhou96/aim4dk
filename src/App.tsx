@@ -71,7 +71,7 @@ function App() {
               <div className="flex items-center space-x-4">
                 <a href="https://2026.ijcai.org/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
                   <img
-                    src="/ijcai26_logo.png"
+                    src="/xxx.png"
                     className="w-21 h-8 object-cover cursor-pointer hover:scale-105 transition-transform duration-200"
                     alt="IJCAI 2026 Logo"
                   />
@@ -288,8 +288,6 @@ function App() {
           </div>
         </section>
 
-        
-
 
         {/* CFP Section */}
         <section id="cfp" className="py-16 bg-[#332F2E] text-[#F5EFE6]">
@@ -298,12 +296,12 @@ function App() {
 
             <div className="text-center">
               <a
-                href="/EmpAI26 CFP.pdf"
+                href="/IJCAI CFP.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-3 py-2 text-xs font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
               >
-                Download CFP (PDF)
+                Download CFP (TBA)
               </a>
             </div>
 
@@ -311,12 +309,11 @@ function App() {
               <div className="bg-[#F5EFE6] text-[#3A3533] rounded-lg shadow-lg p-6 border border-[#D8C7BA]">
                 <h3 className="text-xl font-semibold text-[#A85C53] mb-4">Important Dates</h3>
                 <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
-                  <li>Call for Papers released: <span className="font-bold">January 11, 2026</span></li>
+                  <li>Call for Papers released: <span className="font-bold">April 6, 2026</span></li>
                   <li>
                     Submission Deadline:{" "}
                     <span className="font-bold">
-                      <del className="text-gray-500">February 11, 2026 </del>
-                      → April 4, 2026
+                      May 11, 2026
                       (
                       <a
                         href="https://time.is/Anywhere_on_Earth"
@@ -332,8 +329,7 @@ function App() {
                   <li>
                     Acceptance Notification:{" "}
                     <span className="font-bold">
-                      <del className="text-gray-500">March 20, 2026 </del>
-                      → April 15, 2026
+                      May 29, 2026
                       (
                       <a
                         href="https://time.is/Anywhere_on_Earth"
@@ -349,7 +345,7 @@ function App() {
                   <li>
                     Camera Ready Submission:{" "}
                     <span className="font-bold">
-                      April 21, 2026
+                      June 5, 2026
                       (
                       <a
                         href="https://time.is/Anywhere_on_Earth"
@@ -362,7 +358,8 @@ function App() {
                       )
                     </span>
                   </li>
-                  <li>Workshop Date: <span className="font-bold">May 25, 2026</span></li>
+                  <li>Early Registration: <span className="font-bold">June 15, 2026</span></li>
+                  <li>Workshop Date: <span className="font-bold">August 15/16/17, 2026</span></li>
                 </ul>
               </div>
 
