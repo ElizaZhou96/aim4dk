@@ -363,9 +363,9 @@ function App() {
                 </ul>
               </div>
 
-              {/* <div className="text-[#E7DED2]">
-                <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Paper Format</h3>
-                <p className="text-[#E7DED2] leading-8">
+              <div className="text-[#E7DED2]">
+                <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Paper Format (TBA) </h3>
+                {/* <p className="text-[#E7DED2] leading-8">
                   EmpAI2026 welcomes two submission types (inherit from{" "}
                   <a
                     href="https://fg2026.ieee-biometrics.org/cfp/"
@@ -594,7 +594,7 @@ function App() {
                 alt="Logo"
                 className="w-auto h-14 animate-pulse center my-1"
               />
-              <p className="mt-2">FG 2026 Workshop</p>
+              <p className="mt-2">IJCAI-ECAI 2026 Workshop</p>
             </div>
           </div>
         </footer>
