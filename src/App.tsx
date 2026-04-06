@@ -194,6 +194,7 @@ function App() {
                 AIM4DK creates a space for researchers from normally separate communities to meet around a shared systems-level challenge.
                 As a fully in-person workshop in Bremen, it is designed to foster deep discussion, new collaborations, and practical progress on temporally robust AI.
               </p>
+              </div>
 
             <h3 className="text-xl font-semibold text-[#A85C53] mb-6">Topic of Interest</h3>
             <p className="text-[#5A524F] mb-6">
