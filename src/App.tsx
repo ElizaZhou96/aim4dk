@@ -134,8 +134,7 @@ function App() {
         
         {/* About Section */}
         <section id="about" className="bg-[#F3EAE2] py-14 sm:py-16 lg:py-20 text-[#3A3533]">
-          <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-4">
-            <div className="max-w-3xl mx-auto">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#A85C53] text-center mb-10 sm:mb-12">
                 About the Workshop
               </h2>
@@ -290,7 +289,6 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </section>
 
