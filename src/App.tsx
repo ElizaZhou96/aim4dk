@@ -134,16 +134,16 @@ function App() {
         
         {/* About Section */}
         <section id="about" className="bg-[#F3EAE2] py-14 sm:py-16 lg:py-20 text-[#3A3533]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#A85C53] text-center mb-10 sm:mb-12">
+          <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#A85C53] text-center mb-10 sm:mb-12">
                 About the Workshop
               </h2>
         
-              <div className="space-y-8 sm:space-y-10 text-[15px] sm:text-base lg:text-lg leading-7 sm:leading-8 text-[#5A524F]">
+              <div className="space-y-6 sm:space-y-8 text-[14px] sm:text-[15px] lg:text-[16px] leading-6 sm:leading-7 text-[#5A524F]">
                 {/* Warning Stats Card */}
                 <div className="bg-[#FCF1EF] border border-[#E4C7C2] rounded-2xl p-5 sm:p-6 shadow-sm">
-                  <h3 className="text-lg sm:text-xl font-semibold text-[#A85C53] mb-4">
+                  <h3 className="text-base sm:text-lg font-semibold text-[#A85C53] mb-4">
                     Why this matters
                   </h3>
         
@@ -221,7 +221,7 @@ function App() {
                 </p>
         
                 {/* AIM4DK asks */}
-                <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-5 sm:p-6 shadow-sm">
+                <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-4 sm:p-5 shadow-sm">
                   <h3 className="text-lg sm:text-xl font-semibold text-[#A85C53] mb-4">
                     AIM4DK asks:
                   </h3>
