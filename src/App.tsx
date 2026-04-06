@@ -309,7 +309,7 @@ function App() {
               <div className="bg-[#F5EFE6] text-[#3A3533] rounded-lg shadow-lg p-6 border border-[#D8C7BA]">
                 <h3 className="text-xl font-semibold text-[#A85C53] mb-4">Important Dates</h3>
                 <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
-                  <li>Call for Papers released: <span className="font-bold">April 6, 2026</span></li>
+                  <li>Call for Papers released: <span className="font-bold">April 11, 2026</span></li>
                   <li>
                     Submission Deadline:{" "}
                     <span className="font-bold">
