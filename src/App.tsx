@@ -125,7 +125,7 @@ function App() {
                 <img
                   src="/aim4dk.png"
                   alt="AIM4DK banner"
-                  className="w-full h-[320px] md:h-[420px] object-cover"
+                  className="w-full h-[320px] object-cover"
                 />
               </div>
             </div>
@@ -136,14 +136,64 @@ function App() {
         <section id="about" className="bg-[#F3EAE2] py-16 text-[#3A3533]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-[#A85C53] mb-8 text-center">About the Workshop</h2>
-            <p className="text-[#5A524F] mb-6 leading-8">
-              In the past decade, artificial intelligence (AI) has achieved remarkable progress in recognizing faces, gestures, and multimodal signals. However, the most challenging question remains: How can AI understand all humans, not only the “typical” ones? According to the World Health Organization (WHO) report in 2023, an estimated 1.3 billion people (about 16% of the global population) live with significant disabilities affecting vision, hearing, cognition, or mobility. Their gestures are subtler, their facial cues atypical, and their voices sometimes silent. <br />
-              This workshop proposes <strong className="font-bold text-[#3A3533]">“Empathic Intelligence,”</strong> which extends beyond perception and action, bringing social understanding, affective awareness, and human-centered reasoning into intelligent systems. We aim to explore how multimodal AI can perceive, express, and respond responsibly to non-normative human signals, designing technologies and applications that make the world more accessible, inclusive, and emotionally intelligent. <br />
-              <strong className="font-bold text-[#3A3533]">
-                <MessageCircleHeart className="inline w-5 h-5 text-[#A85C53] animate-bounce mr-2" />
-                Whether you are a general public, a master/PhD student just starting, or an expert with years of interdisciplinary experience, this workshop provides useful research perspectives and practical skills.
-              </strong>
-            </p>
+        
+            {/* Highlight Stats */}
+            <div className="flex flex-col items-center mb-10">
+              <a
+                href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-6 group"
+              >
+                <img
+                  src="/notice.png"
+                  alt="Reference"
+                  className="w-20 h-20 object-contain opacity-80 group-hover:opacity-100 transition duration-300"
+                />
+              </a>
+        
+              <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl px-6 py-6 shadow-md max-w-3xl text-center">
+                <p className="text-lg text-[#4B4441] leading-8">
+                  <span className="font-semibold text-[#A85C53]">38%</span> of webpages from 2013 are no longer accessible <br />
+                  <span className="font-semibold text-[#A85C53]">54%</span> of Wikipedia pages contain at least one broken reference <br />
+                  <span className="font-semibold text-[#A85C53]">91%</span> of real-world deployed AI models suffer performance degradation over time
+                </p>
+              </div>
+            </div>
+        
+            <div className="max-w-4xl mx-auto space-y-6 text-[#5A524F] leading-8 text-lg">
+              <p>
+                The web forgets. Links disappear, datasets age, and the knowledge that once supported AI systems slowly fades away.
+                At the same time, deployed models continue to drift as the world changes, often relying on assumptions that are no longer valid, verifiable, or reproducible.
+              </p>
+        
+              <p>
+                This creates a growing challenge for reliable AI: systems may generate outdated answers, preserve unstable assumptions,
+                or produce outputs whose original foundations can no longer be traced.
+                Disappearing knowledge is not just a data problem. It is also a question of trust, evaluation, and scientific accountability.
+              </p>
+        
+              <p>
+                <strong className="text-[#3A3533]">AIM4DK</strong> brings together researchers working across natural language processing,
+                machine learning, information retrieval, digital preservation, formal logic, and knowledge representation
+                to study how AI should operate when knowledge is unstable, decaying, or no longer recoverable.
+              </p>
+        
+              <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-6 shadow-sm">
+                <h3 className="text-xl font-semibold text-[#A85C53] mb-4">AIM4DK asks:</h3>
+                <ul className="list-disc list-inside space-y-2 text-[#5A524F]">
+                  <li>How should AI systems adapt when sources disappear?</li>
+                  <li>How can benchmarks remain reproducible over time?</li>
+                  <li>How can models reason responsibly with missing or outdated knowledge?</li>
+                  <li>What technical and societal risks emerge when the web forgets?</li>
+                </ul>
+              </div>
+        
+              <p>
+                As an <strong className="text-[#3A3533]">IJCAI-ECAI</strong> cross-disciplinary workshop,
+                AIM4DK creates a space for researchers from normally separate communities to meet around a shared systems-level challenge.
+                As a fully in-person workshop in Bremen, it is designed to foster deep discussion, new collaborations, and practical progress on temporally robust AI.
+              </p>
 
             <h3 className="text-xl font-semibold text-[#A85C53] mb-6">Topic of Interest</h3>
             <p className="text-[#5A524F] mb-6">
