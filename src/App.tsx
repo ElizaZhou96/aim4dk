@@ -131,141 +131,171 @@ function App() {
             </div>
           </div>
         </section>
-
-        {/* About Section */}
-        <section id="about" className="bg-[#F3EAE2] py-16 text-[#3A3533]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-[#A85C53] mb-8 text-center">About the Workshop</h2>
         
-            {/* Highlight Stats */}
-            <div className="flex flex-col mb-10">
-
-              <div className="space-y-4 text-lg text-[#4B4441]">
-              
-                {/* item 1 */}
-                <div className="flex items-start gap-3">
-                  <a
-                    href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-shrink-0 mt-1"
-                  >
-                    <img
-                      src="/warning.png"
-                      alt="ref"
-                      className="w-6 h-6 opacity-80 hover:opacity-100 transition"
-                    />
-                  </a>
-                  <p>
-                    <span className="font-semibold text-[#A85C53]">38%</span> of webpages from 2013 are no longer accessible
-                  </p>
+        {/* About Section */}
+        <section id="about" className="bg-[#F3EAE2] py-14 sm:py-16 lg:py-20 text-[#3A3533]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#A85C53] text-center mb-10 sm:mb-12">
+                About the Workshop
+              </h2>
+        
+              <div className="space-y-8 sm:space-y-10 text-[15px] sm:text-base lg:text-lg leading-7 sm:leading-8 text-[#5A524F]">
+                {/* Warning Stats Card */}
+                <div className="bg-[#FCF1EF] border border-[#E4C7C2] rounded-2xl p-5 sm:p-6 shadow-sm">
+                  <h3 className="text-lg sm:text-xl font-semibold text-[#A85C53] mb-4">
+                    Why this matters
+                  </h3>
+        
+                  <div className="space-y-4">
+                    {/* item 1 */}
+                    <div className="flex items-start gap-3">
+                      <a
+                        href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-shrink-0 mt-1"
+                      >
+                        <img
+                          src="/warning.png"
+                          alt="ref"
+                          className="w-5 h-5 sm:w-6 sm:h-6 opacity-80 hover:opacity-100 transition"
+                        />
+                      </a>
+                      <p className="text-[#4B4441] leading-7">
+                        <span className="font-semibold text-[#A85C53]">38%</span> of webpages from 2013 are no longer accessible
+                      </p>
+                    </div>
+        
+                    {/* item 2 */}
+                    <div className="flex items-start gap-3">
+                      <a
+                        href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-shrink-0 mt-1"
+                      >
+                        <img
+                          src="/warning.png"
+                          alt="ref"
+                          className="w-5 h-5 sm:w-6 sm:h-6 opacity-80 hover:opacity-100 transition"
+                        />
+                      </a>
+                      <p className="text-[#4B4441] leading-7">
+                        <span className="font-semibold text-[#A85C53]">54%</span> of Wikipedia pages contain at least one broken reference
+                      </p>
+                    </div>
+        
+                    {/* item 3 */}
+                    <div className="flex items-start gap-3">
+                      <a
+                        href="https://www.nature.com/articles/s41598-022-15245-z"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-shrink-0 mt-1"
+                      >
+                        <img
+                          src="/warning.png"
+                          alt="ref"
+                          className="w-5 h-5 sm:w-6 sm:h-6 opacity-80 hover:opacity-100 transition"
+                        />
+                      </a>
+                      <p className="text-[#4B4441] leading-7">
+                        <span className="font-semibold text-[#A85C53]">91%</span> of real-world deployed AI models suffer performance degradation over time
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              
-                {/* item 2 */}
-                <div className="flex items-start gap-3">
-                  <a
-                    href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-shrink-0 mt-1"
-                  >
-                    <img
-                      src="/warning.png"
-                      alt="ref"
-                      className="w-6 h-6 opacity-80 hover:opacity-100 transition"
-                    />
-                  </a>
-                  <p>
-                    <span className="font-semibold text-[#A85C53]">54%</span> of Wikipedia pages contain at least one broken reference
-                  </p>
+        
+                {/* Intro Text */}
+                <p>
+                  The web forgets. Links disappear, datasets age, and the knowledge that once supported AI systems slowly fades away.
+                  At the same time, deployed models continue to drift as the world changes, often relying on assumptions that are no longer valid,
+                  verifiable, or reproducible.
+                </p>
+        
+                <p>
+                  This creates a growing challenge for reliable AI: systems may generate outdated answers, preserve unstable assumptions,
+                  or produce outputs whose original foundations can no longer be traced. Disappearing knowledge is not just a data problem.
+                  It is also a question of trust, evaluation, and scientific accountability.
+                </p>
+        
+                {/* AIM4DK asks */}
+                <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-5 sm:p-6 shadow-sm">
+                  <h3 className="text-lg sm:text-xl font-semibold text-[#A85C53] mb-4">
+                    AIM4DK asks:
+                  </h3>
+                  <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
+                    <li>How should AI systems adapt when sources disappear?</li>
+                    <li>How can benchmarks remain reproducible over time?</li>
+                    <li>How can models reason responsibly with missing or outdated knowledge?</li>
+                    <li>What technical and societal risks emerge when the web forgets?</li>
+                  </ul>
                 </div>
-              
-                {/* item 3 */}
-                <div className="flex items-start gap-3">
-                  <a
-                    href="https://www.nature.com/articles/s41598-022-15245-z"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-shrink-0 mt-1"
-                  >
-                    <img
-                      src="/warning.png"
-                      alt="ref"
-                      className="w-6 h-6 opacity-80 hover:opacity-100 transition"
-                    />
-                  </a>
-                  <p>
-                    <span className="font-semibold text-[#A85C53]">91%</span> of real-world deployed AI models suffer performance degradation over time
+        
+                <p>
+                  As an <strong className="text-[#3A3533] font-semibold">IJCAI-ECAI</strong> cross-disciplinary workshop,
+                  AIM4DK creates a space for researchers from normally separate communities to meet around a shared systems-level challenge.
+                  As a fully in-person workshop in Bremen, it is designed to foster deep discussion, new collaborations, and practical progress
+                  on temporally robust AI.
+                </p>
+        
+                {/* Topics */}
+                <div className="pt-2">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-[#A85C53] mb-4">
+                    Topics of Interest
+                  </h3>
+                  <p className="text-[#5A524F] mb-6">
+                    Workshop topics include, but are not limited to:
                   </p>
+        
+                  <div className="grid grid-cols-1 md:grid-cols-1 gap-5">
+                    {/* Topic Group 1 */}
+                    <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-5 sm:p-6 shadow-sm">
+                      <h4 className="font-semibold text-[#3A3533] text-base sm:text-lg mb-3">
+                        Data fragility and preservation
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
+                        <li>Dataset decay, disappearing web sources, and link rot in public resources</li>
+                        <li>Data versioning, web archiving, and long-term dataset preservation</li>
+                        <li>Symbolic and neuro-symbolic approaches to tracking knowledge provenance</li>
+                      </ul>
+                    </div>
+        
+                    {/* Topic Group 2 */}
+                    <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-5 sm:p-6 shadow-sm">
+                      <h4 className="font-semibold text-[#3A3533] text-base sm:text-lg mb-3">
+                        Model robustness under temporal drift
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
+                        <li>Temporal drift and concept shift in machine learning models</li>
+                        <li>Time-aware evaluation methods and protocols for AI reliability</li>
+                        <li>Reasoning under uncertainty caused by missing or outdated context</li>
+                        <li>Robustness in dynamic or decayed information environments</li>
+                      </ul>
+                    </div>
+        
+                    {/* Topic Group 3 */}
+                    <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-5 sm:p-6 shadow-sm">
+                      <h4 className="font-semibold text-[#3A3533] text-base sm:text-lg mb-3">
+                        Foundations, logic, and societal impact
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
+                        <li>Theoretical frameworks for learning under time-sensitive or disappearing data</li>
+                        <li>Non-monotonic reasoning and belief revision in the presence of deleted sources</li>
+                        <li>Societal risks of &quot;ghost knowledge&quot; in law, science, and public policy</li>
+                        <li>Cross-disciplinary case studies of temporal degradation in real-world applications</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              
               </div>
             </div>
-        
-            <div className="w-full px-4 md:px-8 space-y-6 text-[#5A524F] leading-8 text-lg">
-              <p>
-                The web forgets. Links disappear, datasets age, and the knowledge that once supported AI systems slowly fades away.
-                At the same time, deployed models continue to drift as the world changes, often relying on assumptions that are no longer valid, verifiable, or reproducible.
-              </p>
-        
-              <p>
-                This creates a growing challenge for reliable AI: systems may generate outdated answers, preserve unstable assumptions,
-                or produce outputs whose original foundations can no longer be traced.
-                Disappearing knowledge is not just a data problem. It is also a question of trust, evaluation, and scientific accountability.
-              </p>
-        
-              {/* <p>
-                <strong className="text-[#3A3533]">AIM4DK</strong> brings together researchers working across natural language processing,
-                machine learning, information retrieval, digital preservation, formal logic, and knowledge representation
-                to study how AI should operate when knowledge is unstable, decaying, or no longer recoverable.
-              </p> */}
-        
-              <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-[#A85C53] mb-4">AIM4DK asks:</h3>
-                <ul className="list-disc list-inside space-y-2 text-[#5A524F]">
-                  <li>How should AI systems adapt when sources disappear?</li>
-                  <li>How can benchmarks remain reproducible over time?</li>
-                  <li>How can models reason responsibly with missing or outdated knowledge?</li>
-                  <li>What technical and societal risks emerge when the web forgets?</li>
-                </ul>
-              </div>
-        
-              <p>
-                As an <strong className="text-[#3A3533]">IJCAI-ECAI</strong> cross-disciplinary workshop,
-                AIM4DK creates a space for researchers from normally separate communities to meet around a shared systems-level challenge.
-                As a fully in-person workshop in Bremen, it is designed to foster deep discussion, new collaborations, and practical progress on temporally robust AI.
-              </p>
-              </div>
-
-            <h3 className="text-xl font-semibold text-[#A85C53] mb-6">Topic of Interest</h3>
-            <p className="text-[#5A524F] mb-6">
-              Workshop topics include (but are not limited to):<br />
-            </p>
-            
-            <strong className="font-bold text-[#3A3533]">Data fragility and preservation</strong>
-            <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
-              <li>Dataset decay, disappearing web sources, and link rot in public resources</li>
-              <li>Data versioning, web archiving, and long-term dataset preservation</li>
-              <li>Symbolic and neuro-symbolic approaches to tracking knowledge provenance</li>
-            </ul>
-
-            <strong className="font-bold text-[#3A3533]">Model robustness under temporal drift</strong>
-            <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
-              <li>Temporal drift and concept shift in machine learning models</li>
-              <li>Time-aware evaluation methods and protocols for AI reliability</li>
-              <li>Reasoning under uncertainty caused by missing or outdated context</li>
-              <li>Robustness in dynamic or decayed information environments</li>
-            </ul>
-
-            <strong className="font-bold text-[#3A3533]">Foundations, Logic, and societal impact</strong>
-            <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
-              <li>Theoretical frameworks for learning under time-sensitive or disappearing data</li>
-              <li>Non-monotonic reasoning and belief revision in the presence of deleted sources</li>
-              <li>Societal risks of "ghost knowledge" in law, science, and public policy</li>
-              <li>Cross-disciplinary case studies of temporal degradation in real-world applications</li>
-            </ul>
           </div>
         </section>
+
+        
+
 
         {/* CFP Section */}
         <section id="cfp" className="py-16 bg-[#332F2E] text-[#F5EFE6]">
