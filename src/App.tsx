@@ -138,7 +138,7 @@ function App() {
             <h2 className="text-3xl font-bold text-[#A85C53] mb-8 text-center">About the Workshop</h2>
         
             {/* Highlight Stats */}
-            <div className="flex flex-col items-center mb-10">
+            <div className="flex flex-col mb-10">
 
               <div className="space-y-4 text-lg text-[#4B4441]">
               
@@ -200,14 +200,6 @@ function App() {
                 </div>
               
               </div>
-        
-              <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl px-6 py-6 shadow-md max-w-3xl text-center">
-                <p className="text-lg text-[#4B4441] leading-8">
-                  <span className="font-semibold text-[#A85C53]">38%</span> of webpages from 2013 are no longer accessible <br />
-                  <span className="font-semibold text-[#A85C53]">54%</span> of Wikipedia pages contain at least one broken reference <br />
-                  <span className="font-semibold text-[#A85C53]">91%</span> of real-world deployed AI models suffer performance degradation over time
-                </p>
-              </div>
             </div>
         
             <div className="w-full px-4 md:px-8 space-y-6 text-[#5A524F] leading-8 text-lg">
@@ -268,7 +260,7 @@ function App() {
             <strong className="font-bold text-[#3A3533]">Foundations, Logic, and societal impact</strong>
             <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
               <li>Theoretical frameworks for learning under time-sensitive or disappearing data</li>
-              <li>Non-monotonic reasoning and belief revision in the presence of deleted sources/li>
+              <li>Non-monotonic reasoning and belief revision in the presence of deleted sources</li>
               <li>Societal risks of "ghost knowledge" in law, science, and public policy</li>
               <li>Cross-disciplinary case studies of temporal degradation in real-world applications</li>
             </ul>
