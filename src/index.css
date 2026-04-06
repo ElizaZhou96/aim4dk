@@ -4,8 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-dark: #2B2B2B;
+  --bg-dark-2: #332F2E;
+  --bg-light: #F3EAE2;
+  --bg-light-2: #F9F4EE;
+  --text-dark: #3A3533;
+  --text-muted: #5A524F;
+  --text-light: #F5EFE6;
+  --text-light-muted: #E7DED2;
+  --accent: #A85C53;
+  --accent-soft: #C98A7A;
+  --border-soft: #D8C7BA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #2B2B2B, #34302F, #2A2625);
+  color: var(--text-light);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,37 +36,83 @@ h1, h2, h3, h4, h5, h6 {
   cursor: url("/heart.png") 32 32, auto;
 } */
 
+/* Accessibility Mode */
 .accessibility body {
-  font-size: 1.25rem;
-  filter: contrast(120%) brightness(110%);
-  line-height: 1.6;
+  font-size: 1.1rem;
+  filter: contrast(115%) brightness(108%);
+  line-height: 1.75;
 }
 
+/* Buttons */
 .accessibility button {
-  font-weight: bold;
-  border: 2px solid #d9c6e6 !important;
-  background-color: #e2d4ec !important;
+  font-weight: 700;
+  border: 2px solid var(--accent-soft) !important;
 }
 
+/* Links */
 .accessibility a {
   text-decoration: underline;
   font-weight: 600;
 }
 
-.accessibility h1, 
-.accessibility h2, 
+/* Headings */
+.accessibility h1,
+.accessibility h2,
 .accessibility h3 {
   font-weight: 700;
-  color: #B481BB !important;
+  color: var(--accent) !important;
 }
 
-.accessibility .bg-white {
-  background-color: #fefefe !important;
-  border: 1px solid #ddd !important;
+/* Light cards/sections */
+.accessibility .bg-white,
+.accessibility .bg-\[\#F3EAE2\],
+.accessibility .bg-\[\#F9F4EE\] {
+  background-color: #FCF7F2 !important;
+  border: 1px solid var(--border-soft) !important;
+  color: var(--text-dark) !important;
 }
 
+/* Dark sections */
+.accessibility .bg-\[\#2B2B2B\],
+.accessibility .bg-\[\#332F2E\] {
+  background-color: #2E2A29 !important;
+  color: var(--text-light) !important;
+}
+
+/* Muted text on light background */
 .accessibility .text-gray-600,
-.accessibility .text-gray-700 {
-  color: #333 !important;
+.accessibility .text-gray-700,
+.accessibility .text-\[\#5A524F\],
+.accessibility .text-\[\#4B4441\],
+.accessibility .text-\[\#6A625D\] {
+  color: #2F2A28 !important;
   font-weight: 500;
+}
+
+/* Light text on dark background */
+.accessibility .text-\[\#F5EFE6\],
+.accessibility .text-\[\#E7DED2\],
+.accessibility .text-\[\#D7CEC5\] {
+  color: #FFF8F0 !important;
+}
+
+/* Accent text */
+.accessibility .text-\[\#A85C53\],
+.accessibility .text-\[\#C98A7A\],
+.accessibility .text-\[\#D2A092\] {
+  color: #9C554C !important;
+}
+
+/* Inputs */
+.accessibility input,
+.accessibility textarea {
+  border: 2px solid var(--accent-soft) !important;
+  background: #fffdf9 !important;
+  color: var(--text-dark) !important;
+}
+
+/* Focus */
+.accessibility *:focus {
+  outline: 3px solid var(--accent-soft) !important;
+  outline-offset: 2px;
 }
