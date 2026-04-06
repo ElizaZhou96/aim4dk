@@ -363,7 +363,7 @@ function App() {
                 </ul>
               </div>
 
-              <div className="text-[#E7DED2]">
+              {/* <div className="text-[#E7DED2]">
                 <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Paper Format</h3>
                 <p className="text-[#E7DED2] leading-8">
                   EmpAI2026 welcomes two submission types (inherit from{" "}
@@ -410,47 +410,47 @@ function App() {
                 <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
                   <li><strong>Long Paper Track</strong> welcomes novel contributions. Accepted papers will be presented as main talks or posters.</li>
                   <li><strong>Short Paper Track</strong> encourages ongoing, early-stage research or perspective views. Accepted short papers will be presented as posters.</li>
-                </ul>
+                </ul> */}
 
                 <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Submission Instructions</h3>
                 <div className="flex justify-center mb-4">
                   <a
-                    href="https://cmt3.research.microsoft.com/FG2026/Track/14/Submission/Create"
+                    href="xxx"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-6 py-3 text-base font-semibold rounded-full bg-[#A85C53] text-[#FDF9F4] shadow-md hover:bg-[#935047] hover:shadow-lg transition-colors duration-200"
                   >
-                    Submit a Paper
+                    Submit a Paper (TBA)
                   </a>
                 </div>
 
-                <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
+                {/* <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
                   <li>Submissions are processed in CMT. <strong>All accepted papers will be published in the FG 2026 proceedings.</strong></li>
                   <li>Submitted work must be original and must NOT be under review or accepted elsewhere (including the FG main conference).</li>
                   <li>The review process will be double-blind. Papers that are not properly anonymized, do not use the template, or exceed the page limit will be desk rejected.</li>
                   <li>Authors must follow EmpAI 2026 policies on Large Language Model Usage.</li>
                   <li>Authors are also encouraged to provide an ethical considerations statement, which will not count towards the total page limit.</li>
-                </ul>
+                </ul> */}
 
-                <h3 className="text-xl font-semibold text-[#D2A092] mb-2">EmpAI 2026 Large Language Models (LLMs) Usage Policy</h3>
+                {/* <h3 className="text-xl font-semibold text-[#D2A092] mb-2">EmpAI 2026 Large Language Models (LLMs) Usage Policy</h3>
                 <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
                   <li>EmpAI 2026 is a fully human-authored, human-reviewed workshop that does <strong>NOT allow any AI systems to serve as primary authors or reviewers</strong> of any submission. AI-generated papers will NOT be permitted in the long and short paper tracks.</li>
                   <li>LLM-assisted writing is allowed for grammar and style refinement only. All conceptual and experimental contributions must come from human authors.</li>
                   <li>Workshop organizers and reviewers will not use LLMs for reviewing, decision-making, or content generation related to submissions.</li>
-                </ul>
+                </ul> */}
 
                 <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Call for PC members</h3>
                 <p className="text-[#E7DED2] leading-8">
-                  We are looking for passionate and responsible PC members to review submissions for the EmpAI 2026 workshop. If you are interested in accessibility, human-centered AI, or related topics, you are very welcome to apply.
+                  We are looking for passionate and responsible PC members to review submissions for the AIM4DK 2026 workshop. If you are interested in data versioning, temporal degradation, reliable AI, or related topics, you are very welcome to apply.
                 </p>
                 <div className="mt-3">
                   <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfPQVtYlbLfO_R9Oq4jjdK0Cig8HGB6rA1HDs4EP4rWCZsF5Q/viewform?usp=dialog"
+                    href="xxx"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
                   >
-                    Apply Now
+                    Apply Now (TBA)
                   </a>
                 </div>
               </div>
