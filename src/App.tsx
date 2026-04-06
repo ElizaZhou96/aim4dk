@@ -43,7 +43,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <RippleEffect />
+      {/* <RippleEffect /> */}
 
       <div className="min-h-screen bg-gradient-to-b from-[#2B2B2B] via-[#34302F] to-[#2A2625] text-[#F5EFE6]">
         {/* Navigation Bar */}
