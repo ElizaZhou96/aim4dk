@@ -71,7 +71,7 @@ function App() {
               <div className="flex items-center space-x-4">
                 <a href="https://2026.ijcai.org/" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
                   <img
-                    src="/xxx.png"
+                    src="/ijcai26_logo.png"
                     className="w-21 h-8 object-cover cursor-pointer hover:scale-105 transition-transform duration-200"
                     alt="IJCAI 2026 Logo"
                   />
