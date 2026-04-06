@@ -139,18 +139,67 @@ function App() {
         
             {/* Highlight Stats */}
             <div className="flex flex-col items-center mb-10">
-              <a
-                href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mb-6 group"
-              >
-                <img
-                  src="/notice.png"
-                  alt="Reference"
-                  className="w-20 h-20 object-contain opacity-80 group-hover:opacity-100 transition duration-300"
-                />
-              </a>
+
+              <div className="space-y-4 text-lg text-[#4B4441]">
+              
+                {/* item 1 */}
+                <div className="flex items-start gap-3">
+                  <a
+                    href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 mt-1"
+                  >
+                    <img
+                      src="/warning.png"
+                      alt="ref"
+                      className="w-6 h-6 opacity-80 hover:opacity-100 transition"
+                    />
+                  </a>
+                  <p>
+                    <span className="font-semibold text-[#A85C53]">38%</span> of webpages from 2013 are no longer accessible
+                  </p>
+                </div>
+              
+                {/* item 2 */}
+                <div className="flex items-start gap-3">
+                  <a
+                    href="https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 mt-1"
+                  >
+                    <img
+                      src="/warning.png"
+                      alt="ref"
+                      className="w-6 h-6 opacity-80 hover:opacity-100 transition"
+                    />
+                  </a>
+                  <p>
+                    <span className="font-semibold text-[#A85C53]">54%</span> of Wikipedia pages contain at least one broken reference
+                  </p>
+                </div>
+              
+                {/* item 3 */}
+                <div className="flex items-start gap-3">
+                  <a
+                    href="https://www.nature.com/articles/s41598-022-15245-z"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-shrink-0 mt-1"
+                  >
+                    <img
+                      src="/warning.png"
+                      alt="ref"
+                      className="w-6 h-6 opacity-80 hover:opacity-100 transition"
+                    />
+                  </a>
+                  <p>
+                    <span className="font-semibold text-[#A85C53]">91%</span> of real-world deployed AI models suffer performance degradation over time
+                  </p>
+                </div>
+              
+              </div>
         
               <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl px-6 py-6 shadow-md max-w-3xl text-center">
                 <p className="text-lg text-[#4B4441] leading-8">
@@ -161,7 +210,7 @@ function App() {
               </div>
             </div>
         
-            <div className="max-w-4xl mx-auto space-y-6 text-[#5A524F] leading-8 text-lg">
+            <div className="w-full px-4 md:px-8 space-y-6 text-[#5A524F] leading-8 text-lg">
               <p>
                 The web forgets. Links disappear, datasets age, and the knowledge that once supported AI systems slowly fades away.
                 At the same time, deployed models continue to drift as the world changes, often relying on assumptions that are no longer valid, verifiable, or reproducible.
@@ -173,11 +222,11 @@ function App() {
                 Disappearing knowledge is not just a data problem. It is also a question of trust, evaluation, and scientific accountability.
               </p>
         
-              <p>
+              {/* <p>
                 <strong className="text-[#3A3533]">AIM4DK</strong> brings together researchers working across natural language processing,
                 machine learning, information retrieval, digital preservation, formal logic, and knowledge representation
                 to study how AI should operate when knowledge is unstable, decaying, or no longer recoverable.
-              </p>
+              </p> */}
         
               <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-6 shadow-sm">
                 <h3 className="text-xl font-semibold text-[#A85C53] mb-4">AIM4DK asks:</h3>
@@ -200,34 +249,28 @@ function App() {
             <p className="text-[#5A524F] mb-6">
               Workshop topics include (but are not limited to):<br />
             </p>
-
-            <strong className="font-bold text-[#3A3533]">Foundations of Empathic Intelligence</strong>
+            
+            <strong className="font-bold text-[#3A3533]">Data fragility and preservation</strong>
             <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
-              <li>Predictive processing, embodied cognition, and symbol emergence</li>
-              <li>Modeling emotion, intention, and individual diversity</li>
-              <li>Multimodal learning across vision, physiology, and language</li>
-              <li>Computational modeling of emotion and intention under individual differences</li>
+              <li>Dataset decay, disappearing web sources, and link rot in public resources</li>
+              <li>Data versioning, web archiving, and long-term dataset preservation</li>
+              <li>Symbolic and neuro-symbolic approaches to tracking knowledge provenance</li>
             </ul>
 
-            <strong className="font-bold text-[#3A3533]">Inclusive and Accessible Interaction</strong>
+            <strong className="font-bold text-[#3A3533]">Model robustness under temporal drift</strong>
             <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
-              <li>Face, gesture, and gaze systems for sensory, motor, or cognitive impairments</li>
-              <li>Adaptive interaction for diverse sensory, motor, and cognitive abilities</li>
-              <li>Assistive communication and embodied interaction (e.g., AR/VR accessibility)</li>
+              <li>Temporal drift and concept shift in machine learning models</li>
+              <li>Time-aware evaluation methods and protocols for AI reliability</li>
+              <li>Reasoning under uncertainty caused by missing or outdated context</li>
+              <li>Robustness in dynamic or decayed information environments</li>
             </ul>
 
-            <strong className="font-bold text-[#3A3533]">Robustness Across Human Variability</strong>
+            <strong className="font-bold text-[#3A3533]">Foundations, Logic, and societal impact</strong>
             <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
-              <li>Recognition under atypical, incomplete, or noisy signals</li>
-              <li>Learning from small, imbalanced, or underrepresented datasets</li>
-              <li>Fairness-aware benchmarking and evaluation frameworks</li>
-            </ul>
-
-            <strong className="font-bold text-[#3A3533]">Ethics and Human-Centered Design</strong>
-            <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
-              <li>Privacy, consent, dignity, and value-sensitive design</li>
-              <li>Bias mitigation for accessibility-focused AI</li>
-              <li>Cross-disciplinary perspectives from neuroscience, psychology, and social sciences</li>
+              <li>Theoretical frameworks for learning under time-sensitive or disappearing data</li>
+              <li>Non-monotonic reasoning and belief revision in the presence of deleted sources/li>
+              <li>Societal risks of "ghost knowledge" in law, science, and public policy</li>
+              <li>Cross-disciplinary case studies of temporal degradation in real-world applications</li>
             </ul>
           </div>
         </section>
