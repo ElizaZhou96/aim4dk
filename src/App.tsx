@@ -208,21 +208,17 @@ function App() {
         
                 {/* Intro Text */}
                 <p>
-                  The web forgets. Links disappear, datasets age, and the knowledge that once supported AI systems slowly fades away.
-                  At the same time, deployed models continue to drift as the world changes, often relying on assumptions that are no longer valid,
-                  verifiable, or reproducible.
+                  The web forgets, links disappear, datasets age, and the knowledge that once supported AI systems slowly fades away. At the same time, deployed models continue to drift as the world changes, often relying on assumptions that are no longer valid, verifiable, or reproducible.
                 </p>
         
                 <p>
-                  This creates a growing challenge for reliable AI: systems may generate outdated answers, preserve unstable assumptions,
-                  or produce outputs whose original foundations can no longer be traced. Disappearing knowledge is not just a data problem.
-                  It is also a question of trust, evaluation, and scientific accountability.
+                  This shows a growing challenge for reliable AI: systems may generate outdated answers, hallucinate unreliable facts, or produce outputs whose original foundations can no longer be traced. Disappearing knowledge is not just a data problem. It is also a question of trust, evaluation, and scientific accountability.
                 </p>
         
                 {/* AIM4DK asks */}
                 <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-4 sm:p-5 shadow-sm">
                   <h3 className="text-lg sm:text-xl font-semibold text-[#A85C53] mb-4">
-                    AIM4DK asks:
+                    AIM4DK ("Aim" for "DK") asks:
                   </h3>
                   <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
                     <li>How should AI systems adapt when sources disappear?</li>
@@ -232,12 +228,12 @@ function App() {
                   </ul>
                 </div>
         
-                <p>
+                {/* <p>
                   As an <strong className="text-[#3A3533] font-semibold">IJCAI-ECAI</strong> cross-disciplinary workshop,
                   AIM4DK creates a space for researchers from normally separate communities to meet around a shared systems-level challenge.
                   As a fully in-person workshop in Bremen, it is designed to foster deep discussion, new collaborations, and practical progress
                   on temporally robust AI.
-                </p>
+                </p> */}
         
                 {/* Topics */}
                 <div className="pt-2">
