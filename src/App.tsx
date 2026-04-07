@@ -117,7 +117,7 @@ function App() {
             <p className="text-lg text-[#E7DED2] mb-8">
               Reliable AI in a Challenging World
               <br />
-              <strong className="font-bold text-[#F5EFE6]">📅 August 15/16/17, 2026 (TBA)</strong> 📍Bremen, Germany
+              <strong className="font-bold text-[#F5EFE6]">📅 Full-Day August 15/16/17, 2026 (TBA)</strong> 📍Bremen, Germany
             </p>
 
             <div className="mt-10">
