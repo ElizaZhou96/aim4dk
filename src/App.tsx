@@ -503,7 +503,7 @@ function App() {
         <section id="review" className="py-16 bg-[#332F2E] text-[#F5EFE6]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-[#D2A092] mb-8 text-center">Review</h2>
-            <h3 className="text-xl font-semibold text-[#D2A092] mb-4">Program Commitee (TBA)</h3>
+            <h3 className="text-xl font-semibold text-[#D2A092] mb-4">Program Committee (TBA)</h3>
           </div>
         </section>
 
