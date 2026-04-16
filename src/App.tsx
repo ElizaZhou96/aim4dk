@@ -486,14 +486,14 @@ function App() {
               <OrganizerCard
                 name="Yukyung Lee"
                 role="Boston University, USA"
-                image="/girl.png"
+                image="/yukyung.jpeg"
                 website="https://yukyunglee.com/"
               />
               <OrganizerCard
                 name="Humaira Kousar"
                 role="KAIST, South Korea"
-                image="/girl.png"
-                website="https://www.linkedin.com/in/humaira-kousar-32b775136/"
+                image="/humaira.jpg"
+                website="https://humaira-kousar.github.io/"
               />
             </div>
           </div>
