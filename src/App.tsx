@@ -286,7 +286,7 @@ function App() {
                    {/* Topic Group 4 */}
                     <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-5 sm:p-6 shadow-sm">
                       <h4 className="font-semibold text-[#3A3533] text-base sm:text-lg mb-3">
-                        LLMs and Dynamic Knowledge
+                        LLMs and Knowledge Dynamics
                       </h4>
                       <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
                         <li>Knowledge representation and updating in large language models</li>
@@ -328,7 +328,7 @@ function App() {
                   <li>
                     Submission Deadline:{" "}
                     <span className="font-bold">
-                      May 11, 2026
+                      May 8, 2026
                       (
                       <a
                         href="https://time.is/Anywhere_on_Earth"
@@ -344,22 +344,6 @@ function App() {
                   <li>
                     Acceptance Notification:{" "}
                     <span className="font-bold">
-                      May 29, 2026
-                      (
-                      <a
-                        href="https://time.is/Anywhere_on_Earth"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline hover:text-[#A85C53]"
-                      >
-                        {" "}Anywhere on Earth, AoE{" "}
-                      </a>
-                      )
-                    </span>
-                  </li>
-                  <li>
-                    Camera Ready Submission:{" "}
-                    <span className="font-bold">
                       June 5, 2026
                       (
                       <a
@@ -374,6 +358,22 @@ function App() {
                     </span>
                   </li>
                   <li>Early Registration: <span className="font-bold">June 15, 2026</span></li>
+                  <li>
+                    Camera Ready Submission:{" "}
+                    <span className="font-bold">
+                      July 1, 2026
+                      (
+                      <a
+                        href="https://time.is/Anywhere_on_Earth"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-[#A85C53]"
+                      >
+                        {" "}Anywhere on Earth, AoE{" "}
+                      </a>
+                      )
+                    </span>
+                  </li>
                   <li>Workshop Date (TBA): <span className="font-bold">August 15-17, 2026</span></li>
                 </ul>
               </div>
@@ -422,7 +422,7 @@ function App() {
                 </div>
                 
               <p className="text-[#E7DED2] leading-8">
-                AIM4DK2026 invite: Full papers, Short papers, Work-in-progress, Vision and position papers, and Extended abstracts of published or accepted work. <strong>(Including papers accepted at IJCAI-ECAI 2026 or other venues.)</strong>
+                AIM4DK2026 welcomes Full papers, short papers, work-in-progress papers, vision and position papers, and extended abstracts of published or accepted work. <strong>(Including papers accepted at IJCAI-ECAI 2026 or other venues.)</strong>
               </p>
               
                 <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
