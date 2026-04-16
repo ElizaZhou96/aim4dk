@@ -401,23 +401,23 @@ function App() {
                 </ul>  */}
 
                 <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Submission Instructions</h3>
-                <div className="flex justify-center mb-4">
+                <div className="flex flex-wrap justify-center gap-4 mb-5">
                   <a
                     href="https://openreview.net/group?id=ijcai.org/IJCAI-ECAI/2026/Workshop/AIM4DK"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 text-base font-semibold rounded-full bg-[#A85C53] text-[#FDF9F4] shadow-md hover:bg-[#935047] hover:shadow-lg transition-colors duration-200"
+                    className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full bg-[#A85C53] text-[#FDF9F4] shadow-md hover:bg-[#935047] hover:shadow-lg transition-all duration-200"
                   >
                     Submit a Paper
                   </a>
-
+                
                   <a
                     href="https://www.ijcai.org/authors_kit"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
+                    className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full bg-[#EADFD4] text-[#8A4E46] shadow-sm hover:bg-[#DDCDBE] hover:shadow-md transition-all duration-200"
                   >
-                    IJCAI2026 Author Kit
+                    IJCAI 2026 Author Kit
                   </a>
                 </div>
                 
@@ -441,18 +441,16 @@ function App() {
 
                 <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Call for PC members</h3>
                 <p className="text-[#E7DED2] leading-8">
-                  We are looking for passionate and responsible PC members to review submissions for the AIM4DK 2026 workshop. If you are interested in data versioning, temporal degradation, reliable AI, or related topics, you are very welcome to apply.
-                </p>
-                <div className="mt-3">
+                  We are looking for passionate and responsible PC members to review submissions for the AIM4DK 2026 workshop. If you are interested in data versioning, temporal degradation, reliable AI, or related topics, you are very welcome to apply.{" "}
                   <a
                     href="https://shorturl.at/uv4sv"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition align-middle"
                   >
                     Apply Now
                   </a>
-                </div>
+                </p>
               </div>
             </div>
           </div>
