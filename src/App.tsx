@@ -357,7 +357,22 @@ function App() {
                       )
                     </span>
                   </li>
-                  <li>Early Registration: <span className="font-bold">June 15, 2026</span></li>
+                  <li>
+                    Early Registration:{" "}
+                    <span className="font-bold">
+                      June 15, 2026
+                      (
+                      <a
+                        href="https://time.is/Anywhere_on_Earth"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-[#A85C53]"
+                      >
+                        {" "}Anywhere on Earth, AoE{" "}
+                      </a>
+                      )
+                    </span>
+                  </li>
                   <li>
                     Camera Ready Submission:{" "}
                     <span className="font-bold">
