@@ -745,8 +745,8 @@ function OrganizerCard({
               🏠 Back
             </button>
           </div>
-
-          <div className="flex-1 flex items-center">
+        
+          <div className="flex-1 overflow-y-auto pr-2">
             <p className="text-sm text-[#4B4441] leading-7 text-left whitespace-pre-line">
               {bio}
             </p>
