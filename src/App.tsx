@@ -757,7 +757,7 @@ function OrganizerCard({
   );
 }
 
-function OrganizerCardOld{
+function OrganizerCardOld({
   name,
   role,
   image,
