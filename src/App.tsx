@@ -445,12 +445,12 @@ function App() {
                 </p>
                 <div className="mt-3">
                   <a
-                    href="xxx"
+                    href="https://shorturl.at/uv4sv"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
                   >
-                    Apply Now (TBA)
+                    Apply Now
                   </a>
                 </div>
               </div>
