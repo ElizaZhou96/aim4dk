@@ -410,6 +410,15 @@ function App() {
                   >
                     Submit a Paper
                   </a>
+
+                  <a
+                    href="https://www.ijcai.org/authors_kit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
+                  >
+                    IJCAI2026 Author Kit
+                  </a>
                 </div>
                 
               <p className="text-[#E7DED2] leading-8">
@@ -417,22 +426,11 @@ function App() {
               </p>
               
                 <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
-                  <li>We welcome two submission types: <strong>Long Papers</strong> (up to 7 pages) and <strong>Short Papers</strong> (2-4 pages).
-                  <div className="flex flex-wrap gap-3 mt-4 mb-4">
-                  <a
-                    href="https://www.ijcai.org/authors_kit"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
-                  >
-                    IJCAI Author Kit
-                  </a>
-                </div>
-                  </li>
+                  <li>We welcome two submission types: <strong>Long Papers</strong> (up to 7 pages) and <strong>Short Papers</strong> (2-4 pages). </li>
                   <li>This workshop is <strong>non-archival</strong>. Accepted papers will be made publicly available on OpenReview and hosted on the workshop website. </li>
                   <li>Submissions must be prepared using the standard <strong>IJCAI-ECAI 2026 Author Kit</strong> and submitted as a single PDF file. </li>
                   <li>Reviewing will be <strong>double-blind</strong>, and submissions must be anonymized accordingly. </li>
-                </ul> *
+                </ul> 
 
                 {/* <h3 className="text-xl font-semibold text-[#D2A092] mb-2">EmpAI 2026 Large Language Models (LLMs) Usage Policy</h3>
                 <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
