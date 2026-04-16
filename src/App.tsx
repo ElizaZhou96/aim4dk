@@ -378,7 +378,7 @@ function App() {
                 </ul>
               </div>
 
-              <div className="text-[#E7DED2]">
+              {/* <div className="text-[#E7DED2]">
                 <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Paper Format</h3>
                 <p className="text-[#E7DED2] leading-8">
                   We welcome two submission types: <strong>Long Papers</strong> (up to 7 pages) and <strong>Short Papers</strong> (2-4 pages).
@@ -393,7 +393,7 @@ function App() {
                   >
                     IJCAI Author Kit
                   </a>
-                </div>
+                </div> */}
 
                 {/* <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
                   <li><strong>Long Paper Track</strong> welcomes novel contributions. Accepted papers will be presented as main talks or posters.</li>
@@ -412,14 +412,16 @@ function App() {
                   </a>
                 </div>
                 
-                AIM4DK2026 invite: Full papers, Short papers, Work-in-progress, Vision and position papers, and Extended abstracts of published or accepted work. 
-                <strong>Including papers accepted at IJCAI-ECAI 2026 or other venues.</strong>
+              <p className="text-[#E7DED2] leading-8">
+                AIM4DK2026 invite: Full papers, Short papers, Work-in-progress, Vision and position papers, and Extended abstracts of published or accepted work. <strong>(Including papers accepted at IJCAI-ECAI 2026 or other venues.)</strong>
+              </p>
               
-                {/* <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
+                <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
+                  <li>We welcome two submission types: <strong>Long Papers</strong> (up to 7 pages) and <strong>Short Papers</strong> (2-4 pages).</li>
                   <li>This workshop is <strong>non-archival</strong>. Accepted papers will be made publicly available on OpenReview and hosted on the workshop website. </li>
                   <li>Submissions must be prepared using the standard <strong>IJCAI-ECAI 2026 Author Kit</strong> and submitted as a single PDF file. </li>
                   <li>Reviewing will be <strong>double-blind</strong>, and submissions must be anonymized accordingly. </li>
-                </ul> */}
+                </ul> *
 
                 {/* <h3 className="text-xl font-semibold text-[#D2A092] mb-2">EmpAI 2026 Large Language Models (LLMs) Usage Policy</h3>
                 <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
