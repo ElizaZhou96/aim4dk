@@ -495,18 +495,22 @@ function App() {
                 role="Leibniz Centre for Agricultural Landscape Research, Germany"
                 image="/yutong.png"
                 website="https://elizazhou96.github.io/"
+                bio="Yutong Zhou is a Postdoc Researcher working on reliable and human-centered AI, with interests in temporal robustness, knowledge modeling, and multimodal intelligence. Her work connects machine learning systems with questions of accessibility, trust, and long-term deployment."
               />
+              
               <OrganizerCard
                 name="Yukyung Lee"
                 role="Boston University, USA"
                 image="/yukyung.jpeg"
                 website="https://yukyunglee.com/"
+                bio="Yukyung Lee is a Postdoctoral Associate at Boston University, working with Prof. Najoung Kim and Prof. Sebastian Schuster. She received her Ph.D. from Korea University, advised by Prof. Pilsung Kang. Her research focuses on LLM evaluation, aiming to discover, define, and measure the capabilities of language models, with a long-term vision of establishing a science of evaluation. She is also interested in LLM agents that autonomously solve complex problems and how to reliably evaluate them. More recently, her work extends to evaluating LLM capabilities in massive streaming data environments, focusing on temporal reasoning and information organization under evolving contexts. She has published in EMNLP, NAACL, NeurIPS, ACL, and top SCI journals."
               />
               <OrganizerCard
                 name="Humaira Kousar"
                 role="KAIST, South Korea"
                 image="/humaira.jpg"
                 website="https://humaira-kousar.github.io/"
+                bio="Humaira Kousar is a Ph.D. Student at KAIST University, advised by Prof. Jaekyun Moon. Her research centers on Active Learning, Distributed Machine Learning (Federated and Split Learning), and Large Language Models (LLMs). Specifically, she focuses on data-centric AI and the personalization of Foundation Models in distributed environments. Her work addresses data fragility and knowledge provenance by developing computation-efficient frameworks for the storage-efficient serving of pruned LLM experts and optimizing data acquisition in high-stakes, resource-constrained environments. She holds a registered patent and has published her research in top-tier venues such as TMLR and NeurIPS, etc.  Beyond her research, she serves as a reviewer for top-tier venues like NeurIPS, ICLR, ICML, and AAAI, etc."
               />
             </div>
           </div>
@@ -681,6 +685,79 @@ function FeatureCard({
 }
 
 function OrganizerCard({
+  name,
+  role,
+  image,
+  website,
+  bio,
+}: {
+  name: string;
+  role: string;
+  image: string;
+  website: string;
+  bio: string;
+}) {
+  const [flipped, setFlipped] = useState(false);
+
+  return (
+    <div className="max-w-xs w-full h-[360px] mx-auto [perspective:1200px]">
+      <div
+        className={`relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d] ${
+          flipped ? "[transform:rotateY(180deg)]" : ""
+        }`}
+      >
+        {/* Front */}
+        <div className="absolute inset-0 [backface-visibility:hidden] overflow-hidden rounded-2xl border border-[#D8C7BA] bg-[#F9F4EE] px-6 py-7 text-center shadow-xl">
+          <button
+            type="button"
+            onClick={() => setFlipped(true)}
+            className="absolute top-4 right-4 inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full bg-[#F3EAE2] text-[#A85C53] border border-[#E2CFC2] hover:bg-[#EADFD4] transition"
+          >
+            ✨ Bio
+          </button>
+
+          <img
+            src={image}
+            alt={name}
+            className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-[#D9C8BB] shadow-md"
+          />
+
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-xl font-semibold text-[#A85C53] mb-4 hover:underline"
+          >
+            {name}
+          </a>
+
+          <p className="text-[#5A524F] leading-6">{role}</p>
+        </div>
+
+        {/* Back */}
+        <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-hidden rounded-2xl border border-[#D8C7BA] bg-[#F9F4EE] px-6 py-6 shadow-xl flex flex-col">
+          <div className="flex justify-end mb-3">
+            <button
+              type="button"
+              onClick={() => setFlipped(false)}
+              className="inline-flex items-center px-3 py-1 text-xs font-semibold rounded-full bg-[#F3EAE2] text-[#A85C53] border border-[#E2CFC2] hover:bg-[#EADFD4] transition"
+            >
+              🏠 Back
+            </button>
+          </div>
+
+          <div className="flex-1 flex items-center">
+            <p className="text-sm text-[#4B4441] leading-7 text-left whitespace-pre-line">
+              {bio}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function OrganizerCardOld{
   name,
   role,
   image,
