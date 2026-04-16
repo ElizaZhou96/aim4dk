@@ -282,6 +282,21 @@ function App() {
                         <li>Cross-disciplinary case studies of temporal degradation in real-world applications</li>
                       </ul>
                     </div>
+
+                   {/* Topic Group 4 */}
+                    <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-5 sm:p-6 shadow-sm">
+                      <h4 className="font-semibold text-[#3A3533] text-base sm:text-lg mb-3">
+                        LLMs and Dynamic Knowledge
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
+                        <li>Knowledge representation and updating in large language models</li>
+                        <li>Hallucination and reliability under outdated or unverifiable information</li>
+                        <li>Evaluation of LLMs under temporal drift and knowledge decay</li>
+                        <li>Retrieval-augmented generation with missing, changing, or conflicting sources</li>
+                        <li>Long-term adaptation and maintenance of deployed language models</li>
+                      </ul>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -359,77 +374,51 @@ function App() {
                     </span>
                   </li>
                   <li>Early Registration: <span className="font-bold">June 15, 2026</span></li>
-                  <li>Workshop Date: <span className="font-bold">August 15/16/17, 2026</span></li>
+                  <li>Workshop Date (TBA): <span className="font-bold">August 15-17, 2026</span></li>
                 </ul>
               </div>
 
               <div className="text-[#E7DED2]">
-                <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Paper Format (TBA) </h3>
-                {/* <p className="text-[#E7DED2] leading-8">
-                  EmpAI2026 welcomes two submission types (inherit from{" "}
-                  <a
-                    href="https://fg2026.ieee-biometrics.org/cfp/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#D2A092] underline hover:text-[#F5EFE6]"
-                  >
-                    FG 2026
-                  </a>
-                  ): <strong>Long Papers</strong> (8 pages, excluding references) and <strong>Short Papers</strong> (4 pages + 1 page for references).
+                <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Paper Format</h3>
+                <p className="text-[#E7DED2] leading-8">
+                  We welcome two submission types: <strong>Long Papers</strong> (up to 7 pages) and <strong>Short Papers</strong> (2-4 pages).
                 </p>
 
                 <div className="flex flex-wrap gap-3 mt-4 mb-4">
                   <a
-                    href="https://www.overleaf.com/read/vtbwkbhhbxpp#35990f"
+                    href="https://www.ijcai.org/authors_kit"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
                   >
-                    Overleaf Latex
-                  </a>
-
-                  <a
-                    href="https://drive.google.com/file/d/1RBOaG7JogyFI7nigzHjJfn36pHQ3rakp/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
-                  >
-                    Latex Template
-                  </a>
-
-                  <a
-                    href="https://docs.google.com/document/d/1nekOaVw4SB3U0HkgoKdf06mWzPmjDQQh/edit?usp=sharing&ouid=104016129676819843735&rtpof=true&sd=true"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-3 py-2 text-sm font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
-                  >
-                    Word Template
-                  </a>
-                </div>
-
-                <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
-                  <li><strong>Long Paper Track</strong> welcomes novel contributions. Accepted papers will be presented as main talks or posters.</li>
-                  <li><strong>Short Paper Track</strong> encourages ongoing, early-stage research or perspective views. Accepted short papers will be presented as posters.</li>
-                </ul> */}
-
-                <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Submission Instructions</h3>
-                <div className="flex justify-center mb-4">
-                  <a
-                    href="xxx"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 text-base font-semibold rounded-full bg-[#A85C53] text-[#FDF9F4] shadow-md hover:bg-[#935047] hover:shadow-lg transition-colors duration-200"
-                  >
-                    Submit a Paper (TBA)
+                    IJCAI Author Kit
                   </a>
                 </div>
 
                 {/* <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
-                  <li>Submissions are processed in CMT. <strong>All accepted papers will be published in the FG 2026 proceedings.</strong></li>
-                  <li>Submitted work must be original and must NOT be under review or accepted elsewhere (including the FG main conference).</li>
-                  <li>The review process will be double-blind. Papers that are not properly anonymized, do not use the template, or exceed the page limit will be desk rejected.</li>
-                  <li>Authors must follow EmpAI 2026 policies on Large Language Model Usage.</li>
-                  <li>Authors are also encouraged to provide an ethical considerations statement, which will not count towards the total page limit.</li>
+                  <li><strong>Long Paper Track</strong> welcomes novel contributions. Accepted papers will be presented as main talks or posters.</li>
+                  <li><strong>Short Paper Track</strong> encourages ongoing, early-stage research or perspective views. Accepted short papers will be presented as posters.</li>
+                </ul>  */}
+
+                <h3 className="text-xl font-semibold text-[#D2A092] mb-2">Submission Instructions</h3>
+                <div className="flex justify-center mb-4">
+                  <a
+                    href="https://openreview.net/group?id=ijcai.org/IJCAI-ECAI/2026/Workshop/AIM4DK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 text-base font-semibold rounded-full bg-[#A85C53] text-[#FDF9F4] shadow-md hover:bg-[#935047] hover:shadow-lg transition-colors duration-200"
+                  >
+                    Submit a Paper
+                  </a>
+                </div>
+                
+                AIM4DK2026 invite: Full papers, Short papers, Work-in-progress, Vision and position papers, and Extended abstracts of published or accepted work. 
+                <strong>Including papers accepted at IJCAI-ECAI 2026 or other venues.</strong>
+              
+                {/* <ul className="text-[#E7DED2] mb-4 list-disc list-inside space-y-2">
+                  <li>This workshop is <strong>non-archival</strong>. Accepted papers will be made publicly available on OpenReview and hosted on the workshop website. </li>
+                  <li>Submissions must be prepared using the standard <strong>IJCAI-ECAI 2026 Author Kit</strong> and submitted as a single PDF file. </li>
+                  <li>Reviewing will be <strong>double-blind</strong>, and submissions must be anonymized accordingly. </li>
                 </ul> */}
 
                 {/* <h3 className="text-xl font-semibold text-[#D2A092] mb-2">EmpAI 2026 Large Language Models (LLMs) Usage Policy</h3>
