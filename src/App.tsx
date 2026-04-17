@@ -707,31 +707,37 @@ function OrganizerCard({
         }`}
       >
         {/* Front */}
-        <div className="absolute inset-0 [backface-visibility:hidden] overflow-hidden rounded-2xl border border-[#D8C7BA] bg-[#F9F4EE] px-6 py-7 text-center shadow-xl">
+        <div className="absolute inset-0 [backface-visibility:hidden] overflow-hidden rounded-2xl border border-[#D8C7BA] bg-[#F9F4EE] shadow-xl flex flex-col">
           <button
             type="button"
             onClick={() => setFlipped(true)}
-            className="absolute top-4 right-4 inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full bg-[#F3EAE2] text-[#A85C53] border border-[#E2CFC2] hover:bg-[#EADFD4] transition"
+            className="absolute top-4 right-4 z-10 inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-full bg-[#F3EAE2] text-[#A85C53] border border-[#E2CFC2] hover:bg-[#EADFD4] transition"
           >
             ✨ Bio
           </button>
-
-          <img
-            src={image}
-            alt={name}
-            className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border border-[#D9C8BB] shadow-md"
-          />
-
-          <a
-            href={website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block text-xl font-semibold text-[#A85C53] mb-4 hover:underline"
-          >
-            {name}
-          </a>
-
-          <p className="text-[#5A524F] leading-6">{role}</p>
+        
+          <div className="h-[68%] w-full">
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        
+          <div className="flex-1 px-5 py-4 text-center flex flex-col justify-center">
+            <a
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-lg font-semibold text-[#A85C53] hover:underline"
+            >
+              {name}
+            </a>
+        
+            <p className="mt-2 text-sm text-[#5A524F] leading-6">
+              {role}
+            </p>
+          </div>
         </div>
 
         {/* Back */}
