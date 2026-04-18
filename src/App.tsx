@@ -350,55 +350,25 @@ function App() {
                   <li>
                     Submission Deadline:{" "}
                     <span className="font-bold">
-                      May 8, 2026 (23:59, AoE)
+                      May 8, 2026 (23:59 AoE)
                     </span>
                   </li>
                   <li>
                     Acceptance Notification:{" "}
                     <span className="font-bold">
-                      June 5, 2026
-                      (
-                      <a
-                        href="https://time.is/Anywhere_on_Earth"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline hover:text-[#A85C53]"
-                      >
-                        {" "}Anywhere on Earth, AoE{" "}
-                      </a>
-                      )
+                      June 5, 2026 (23:59 AoE)
                     </span>
                   </li>
                   <li>
                     Early Registration:{" "}
                     <span className="font-bold">
-                      June 15, 2026
-                      (
-                      <a
-                        href="https://time.is/Anywhere_on_Earth"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline hover:text-[#A85C53]"
-                      >
-                        {" "}Anywhere on Earth, AoE{" "}
-                      </a>
-                      )
+                      June 15, 2026 (23:59 AoE)
                     </span>
                   </li>
                   <li>
                     Camera Ready Submission:{" "}
                     <span className="font-bold">
-                      July 1, 2026
-                      (
-                      <a
-                        href="https://time.is/Anywhere_on_Earth"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline hover:text-[#A85C53]"
-                      >
-                        {" "}Anywhere on Earth, AoE{" "}
-                      </a>
-                      )
+                      July 1, 2026 (23:59 AoE) 
                     </span>
                   </li>
                   <li>Workshop Date (TBA): <span className="font-bold">August 15-17, 2026</span></li>
