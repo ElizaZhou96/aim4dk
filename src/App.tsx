@@ -121,7 +121,7 @@ function App() {
             </p>
 
             <div className="mt-10 w-full relative overflow-hidden rounded-2xl">
-              <div className="w-full h-full md:h-[300px] overflow-hidden">
+              <div className="w-full h-full md:h-[400px] overflow-hidden">
                 <img
                   src="/ijcai_banner.png"
                   alt="AIM4DK banner"
