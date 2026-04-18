@@ -120,29 +120,28 @@ function App() {
               <strong className="font-bold text-[#F5EFE6]">📅 Full-Day August 15/16/17, 2026 (TBA)</strong> 📍Bremen, Germany
             </p>
 
-            <div className="mt-10">
-              <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden border border-[#8C4F4F]/35 shadow-[0_20px_80px_rgba(90,55,50,0.35)]">
-                <img
-                  src="/ijcai_banner.png"
-                  alt="IJCAI banner"
-                  className="w-full h-[320px] object-cover"
-                />
-              </div>
-
-              <p className="max-w-6xl mx-auto mt-3 text-xs text-[#B9AEA4] text-right">
-                Image source:{" "}
-                <a
-                  href="https://2026.ijcai.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-[#D2A092]"
-                >
-                  IJCAI-26 Official Website
-                </a>
-                . © IJCAI.
-              </p>
-              
+          <div className="mt-10 w-full">
+            <div className="w-full overflow-hidden">
+              <img
+                src="/aim4dk.png"
+                alt="AIM4DK banner."
+                className="w-full h-[420px] md:h-[520px] object-cover"
+              />
             </div>
+          
+            <p className="mt-2 text-[11px] text-[#9F948C] text-right px-4 sm:px-6 lg:px-8">
+              Banner image source:{" "}
+              <a
+                href="https://2026.ijcai.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-[#D2A092]"
+              >
+                IJCAI-26 Official Website
+              </a>
+              . © IJCAI.
+            </p>
+          </div>
           </div>
         </section>
         
