@@ -401,8 +401,8 @@ function App() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mt-8">
-              <div className={`rounded-lg shadow-lg p-6 border transition-colors duration-300 ${styles.primaryCard}`}>
-                <h3 className={`text-xl font-semibold mb-4 ${styles.headingOnLight}`}>
+              <div className="rounded-lg shadow-lg p-6 border border-[#D8C7BA] bg-[#F5EFE6] text-[#3A3533]">
+                <h3 className="text-xl font-semibold mb-4 text-[#A85C53]">
                   Important Dates{' '}
                   <span className="font-bold">
                     (
@@ -418,7 +418,7 @@ function App() {
                     )
                   </span>
                 </h3>
-                <ul className={`${isDark ? 'text-[#F3EAE2]' : 'text-[#5A524F]'} mb-4 list-disc list-inside space-y-2`}>
+                <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
                   <li>
                     Submission Deadline: <span className="font-bold">May 8, 2026 (23:59 AoE)</span>
                   </li>
