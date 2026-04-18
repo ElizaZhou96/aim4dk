@@ -125,7 +125,7 @@ function App() {
                 <img
                   src="/ijcai_banner.png"
                   alt="AIM4DK banner"
-                  className="w-full h-full object-contain scale-[0.9]"
+                  className="w-full h-full object-contain"
                 />
               </div>
             
