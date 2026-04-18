@@ -125,7 +125,7 @@ function App() {
                 <img
                   src="/ijcai_banner.png"
                   alt="AIM4DK banner"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-[center_15%]"
                 />
               </div>
             
