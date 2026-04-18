@@ -325,12 +325,12 @@ function App() {
 
             <div className="text-center">
               <a
-                href="/IJCAI CFP.pdf"
+                href="/AIM4DK2026_CFP.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-3 py-2 text-xs font-medium rounded-full bg-[#EADFD4] text-[#8A4E46] hover:bg-[#DDCDBE] transition"
               >
-                Download CFP (TBA)
+                Download CFP
               </a>
             </div>
 
