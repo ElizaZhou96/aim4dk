@@ -121,7 +121,7 @@ function App() {
             </p>
 
             <div className="mt-10 w-full relative overflow-hidden">
-              <div className="w-full h-[300px] md:h-[360px] flex items-center justify-center overflow-hidden">
+              <div className="w-full h-[300px] md:h-[360px] flex items-center justify-center overflow-hidden bg-[#2B2B2B]">
                 <img
                   src="/ijcai_banner.png"
                   alt="AIM4DK banner"
@@ -142,7 +142,8 @@ function App() {
                 . © IJCAI.
               </div>
             </div>
-          
+            
+          </div>
         </section>
         
         {/* About Section */}
