@@ -716,11 +716,11 @@ function OrganizerCard({
             ✨ Bio
           </button>
         
-          <div className="h-[68%] w-full">
+          <div className="h-[68%] w-full overflow-hidden bg-[#EFE4DA]">
             <img
               src={image}
               alt={name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-[center_15%]"
             />
           </div>
         
