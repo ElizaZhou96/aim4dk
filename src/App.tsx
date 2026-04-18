@@ -123,7 +123,7 @@ function App() {
           <div className="mt-10 w-full">
             <div className="w-full overflow-hidden">
               <img
-                src="/aim4dk.png"
+                src="/ijcai_banner.png"
                 alt="AIM4DK banner."
                 className="w-full h-[420px] md:h-[520px] object-cover"
               />
