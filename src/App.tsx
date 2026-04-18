@@ -120,29 +120,29 @@ function App() {
               <strong className="font-bold text-[#F5EFE6]">📅 Full-Day August 15/16/17, 2026 (TBA)</strong> 📍Bremen, Germany
             </p>
 
-          <div className="mt-10 w-full">
-            <div className="w-full overflow-hidden">
-              <img
-                src="/ijcai_banner.png"
-                alt="AIM4DK banner."
-                className="w-full h-[420px] md:h-[520px] object-cover"
-              />
+            <div className="mt-10 w-full relative overflow-hidden">
+              <div className="w-full h-[300px] md:h-[360px] flex items-center justify-center overflow-hidden">
+                <img
+                  src="/ijcai_banner.png"
+                  alt="AIM4DK banner"
+                  className="w-full h-full object-contain scale-[0.7]"
+                />
+              </div>
+            
+              <div className="absolute bottom-3 right-4 text-[11px] text-white/70">
+                Image source:{" "}
+                <a
+                  href="https://2026.ijcai.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-[#D2A092]"
+                >
+                  IJCAI-26 Official Website
+                </a>
+                . © IJCAI.
+              </div>
             </div>
           
-            <p className="mt-2 text-[11px] text-[#9F948C] text-right px-4 sm:px-6 lg:px-8">
-              Banner image source:{" "}
-              <a
-                href="https://2026.ijcai.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-[#D2A092]"
-              >
-                IJCAI-26 Official Website
-              </a>
-              . © IJCAI.
-            </p>
-          </div>
-          </div>
         </section>
         
         {/* About Section */}
