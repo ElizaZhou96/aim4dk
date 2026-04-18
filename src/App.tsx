@@ -120,16 +120,16 @@ function App() {
               <strong className="font-bold text-[#F5EFE6]">📅 Full-Day August 15/16/17, 2026 (TBA)</strong> 📍Bremen, Germany
             </p>
 
-            <div className="mt-10 w-full relative overflow-hidden">
-              <div className="w-full h-[300px] md:h-[360px] flex items-center justify-center overflow-hidden bg-[#2B2B2B]">
+            <div className="mt-10 w-full relative overflow-hidden rounded-2xl">
+              <div className="w-full h-[220px] md:h-[280px] overflow-hidden">
                 <img
                   src="/ijcai_banner.png"
                   alt="AIM4DK banner"
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             
-              <div className="absolute bottom-3 right-4 text-[11px] text-white/70">
+              <div className="absolute bottom-3 right-4 text-[11px] text-white/70 bg-black/25 px-2 py-1 rounded">
                 Image source:{" "}
                 <a
                   href="https://2026.ijcai.org/"
