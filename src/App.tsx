@@ -123,11 +123,25 @@ function App() {
             <div className="mt-10">
               <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden border border-[#8C4F4F]/35 shadow-[0_20px_80px_rgba(90,55,50,0.35)]">
                 <img
-                  src="/aim4dk.png"
-                  alt="AIM4DK banner"
+                  src="/ijcai_banner.png"
+                  alt="IJCAI banner"
                   className="w-full h-[320px] object-cover"
                 />
               </div>
+
+              <p className="max-w-6xl mx-auto mt-3 text-xs text-[#B9AEA4] text-right">
+                Image source:{" "}
+                <a
+                  href="https://2026.ijcai.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-[#D2A092]"
+                >
+                  IJCAI-26 Official Website
+                </a>
+                . © IJCAI.
+              </p>
+              
             </div>
           </div>
         </section>
@@ -583,7 +597,8 @@ function App() {
         <footer className="py-8 bg-[#2B2B2B] border-t border-[#8C4F4F]/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col items-center text-[#D7CEC5]">
-              <p>© Copyright Yutong Zhou. All rights reserved.</p>
+              <p>© 2026 Yutong Zhou. All rights reserved.</p>
+              <p className="mt-1 text-xs text-[#B9AEA4]"> Third-party names, logos, and images remain the property of their respective owners. </p>
 
               {/* <div className="flex gap-5 mt-4 mb-3">
                 <a
