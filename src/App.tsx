@@ -336,13 +336,7 @@ function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mt-8">
               <div className="bg-[#F5EFE6] text-[#3A3533] rounded-lg shadow-lg p-6 border border-[#D8C7BA]">
-                <h3 className="text-xl font-semibold text-[#A85C53] mb-4">Important Dates</h3>
-                <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
-                  <li>
-                    Submission Deadline:{" "}
-                    <span className="font-bold">
-                      May 8, 2026
-                      (
+                <h3 className="text-xl font-semibold text-[#A85C53] mb-4">Important Dates <span className="font-bold"> (
                       <a
                         href="https://time.is/Anywhere_on_Earth"
                         target="_blank"
@@ -351,7 +345,12 @@ function App() {
                       >
                         {" "}Anywhere on Earth, AoE{" "}
                       </a>
-                      )
+                      ) </span></h3>
+                <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
+                  <li>
+                    Submission Deadline:{" "}
+                    <span className="font-bold">
+                      May 8, 2026 (23:59, AoE)
                     </span>
                   </li>
                   <li>
