@@ -267,7 +267,7 @@ function App() {
                       <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
                         <li>Dataset decay, disappearing web sources, and link rot in public resources</li>
                         <li>Data versioning, web archiving, and long-term dataset preservation</li>
-                        <li>Symbolic and neuro-symbolic approaches to tracking knowledge provenance</li>
+                        <li>Knowledge provenance tracking (symbolic and neuro-symbolic approaches)</li>
                       </ul>
                     </div>
         
@@ -279,7 +279,7 @@ function App() {
                       <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
                         <li>Temporal drift and concept shift in machine learning models</li>
                         <li>Time-aware evaluation methods and protocols for AI reliability</li>
-                        <li>Reasoning under uncertainty caused by missing or outdated context</li>
+                        <li>Reasoning under missing, outdated, or unreliable information</li>
                         <li>Robustness in dynamic or decayed information environments</li>
                       </ul>
                     </div>
@@ -290,8 +290,8 @@ function App() {
                         Foundations, logic, and societal impact
                       </h4>
                       <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
-                        <li>Theoretical frameworks for learning under time-sensitive or disappearing data</li>
-                        <li>Non-monotonic reasoning and belief revision in the presence of deleted sources</li>
+                        <li>Learning and reasoning under time-sensitive or disappearing data </li>
+                        <li>Non-monotonic reasoning and belief revision with deleted knowledge</li>
                         <li>Societal risks of &quot;ghost knowledge&quot; in law, science, and public policy</li>
                         <li>Cross-disciplinary case studies of temporal degradation in real-world applications</li>
                       </ul>
@@ -300,14 +300,14 @@ function App() {
                    {/* Topic Group 4 */}
                     <div className="bg-[#F9F4EE] border border-[#DDCEC3] rounded-2xl p-5 sm:p-6 shadow-sm">
                       <h4 className="font-semibold text-[#3A3533] text-base sm:text-lg mb-3">
-                        LLMs and Knowledge Dynamics
+                        LLMs and Dynamic Knowledge
                       </h4>
                       <ul className="list-disc pl-5 space-y-2 text-[#5A524F]">
-                        <li>Knowledge representation and updating in large language models</li>
+                        <li>Knowledge representation, updating, and retrieval in LLMs </li>
                         <li>Hallucination and reliability under outdated or unverifiable information</li>
-                        <li>Evaluation of LLMs under temporal drift and knowledge decay</li>
-                        <li>Retrieval-augmented generation with missing, changing, or conflicting sources</li>
-                        <li>Long-term adaptation and maintenance of deployed language models</li>
+                        <li>Temporal fine-tuning, continual learning, and model adaptation</li>
+                        <li>Catastrophic forgetting and stability-plasticity trade-offs </li>
+                        <li>Long-term deployment, maintenance, and lifecycle management of LLMs</li>
                       </ul>
                     </div>
                     
