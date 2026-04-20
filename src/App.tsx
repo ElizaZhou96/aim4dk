@@ -479,7 +479,7 @@ function App() {
                 </div>
 
                 <p className="leading-8">
-                  AIM4DK2026 welcomes Full papers, short papers, work-in-progress papers, vision and position papers, and
+                  AIM4DK2026 welcomes full papers, short papers, work-in-progress papers, vision and position papers, and
                   extended abstracts of published or accepted work.{' '}
                   <strong>(Including papers accepted at IJCAI-ECAI 2026 or other venues.)</strong>
                 </p>
