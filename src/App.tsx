@@ -18,8 +18,20 @@ type Theme = 'light' | 'dark';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [message, setMessage] = useState('');
-  const [theme, setTheme] = useState<Theme>('dark');
-  const [themeLoaded, setThemeLoaded] = useState(false);
+  
+
+  const getInitialTheme = (): Theme => {
+  if (typeof window === 'undefined') return 'light';
+
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light' || savedTheme === 'dark') {
+    return savedTheme;
+  }
+
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+};
+
+  const [theme, setTheme] = useState<Theme>(getInitialTheme);
 
   const scrollToSection = (id: string) => {
     window.location.hash = id;
@@ -30,26 +42,32 @@ function App() {
     setIsMenuOpen(false);
   };
 
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem('theme');
+
+  //   if (savedTheme === 'light' || savedTheme === 'dark') {
+  //     setTheme(savedTheme);
+  //   } else {
+  //     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  //     setTheme(prefersDark ? 'dark' : 'light');
+  //   }
+
+  //   setThemeLoaded(true);
+  // }, []);
+
+  // useEffect(() => {
+  //   if (!themeLoaded) return;
+
+  //   document.documentElement.classList.remove('light', 'dark');
+  //   document.documentElement.classList.add(theme);
+  //   localStorage.setItem('theme', theme);
+  // }, [theme, themeLoaded]);
+
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-
-    if (savedTheme === 'light' || savedTheme === 'dark') {
-      setTheme(savedTheme);
-    } else {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setTheme(prefersDark ? 'dark' : 'light');
-    }
-
-    setThemeLoaded(true);
-  }, []);
-
-  useEffect(() => {
-    if (!themeLoaded) return;
-
     document.documentElement.classList.remove('light', 'dark');
     document.documentElement.classList.add(theme);
     localStorage.setItem('theme', theme);
-  }, [theme, themeLoaded]);
+  }, [theme]);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
