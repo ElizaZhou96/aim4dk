@@ -205,7 +205,7 @@ function App() {
                 <NavItem theme={theme} icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                 <NavItem theme={theme} icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <NavItem theme={theme} icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
-                <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Sponsors" onClick={() => window.location.href = '/sponsorship'} />
+                <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Sponsors" to="/sponsorship" />
                 <NavItem theme={theme} icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
               </div>
 
@@ -656,19 +656,33 @@ function NavItem({
   text,
   onClick,
   theme,
+  to,
 }: {
   icon: React.ReactNode;
   text: string;
-  onClick: () => void;
+  onClick?: () => void;
   theme: Theme;
+  to?: string;
 }) {
+  const className = `flex items-center space-x-1 transition-colors duration-200 ${
+    theme === 'dark'
+      ? 'text-[#E7DED2] hover:text-[#D2A092]'
+      : 'text-[#4B4441] hover:text-[#A85C53]'
+  }`;
+
+  // Link
+  if (to) {
+    return (
+      <Link to={to} className={className}>
+        {icon}
+        <span>{text}</span>
+      </Link>
+    );
+  }
+
+  // Button 
   return (
-    <button
-      onClick={onClick}
-      className={`flex items-center space-x-1 transition-colors duration-200 ${
-        theme === 'dark' ? 'text-[#E7DED2] hover:text-[#D2A092]' : 'text-[#4B4441] hover:text-[#A85C53]'
-      }`}
-    >
+    <button onClick={onClick} className={className}>
       {icon}
       <span>{text}</span>
     </button>
