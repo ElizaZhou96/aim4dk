@@ -11,6 +11,7 @@ import {
   Paperclip,
   Sun,
   Moon,
+  PiggyBank,
 } from 'lucide-react';
 
 type Theme = 'light' | 'dark';
@@ -203,6 +204,7 @@ function App() {
                 <NavItem theme={theme} icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                 <NavItem theme={theme} icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <NavItem theme={theme} icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
+                <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Sponsors" onClick={() => window.location.href = '/sponsorship'} />
                 <NavItem theme={theme} icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
               </div>
 
