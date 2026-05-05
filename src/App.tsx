@@ -441,7 +441,7 @@ function App() {
                 </h3>
                 <ul className="text-[#5A524F] mb-4 list-disc list-inside space-y-2">
                   <li>
-                    Submission Deadline: <span className="font-bold">May 8, 2026 (23:59 AoE)</span>
+                    Submission Deadline: <span className="font-bold"> <del className="text-gray-500">May 8, 2026 </del>{" "} → May 11, 2026 (23:59 AoE)</span>
                   </li>
                   <li>
                     Acceptance Notification: <span className="font-bold">June 5, 2026 (23:59 AoE)</span>
