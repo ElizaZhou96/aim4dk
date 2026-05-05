@@ -582,7 +582,7 @@ function App() {
             <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnLight}`}>Contact Us</h2>
 
             <form
-              action="https://formspree.io/f/mvzzgbww"
+              action="https://formspree.io/f/xvzvdgvy"
               method="POST"
               className={`w-full shadow-lg rounded-2xl p-6 sm:p-8 space-y-6 border transition-colors duration-300 ${styles.formBg}`}
             >
