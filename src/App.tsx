@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import {
   Home,
   Smile,
@@ -12,7 +12,7 @@ import {
   Paperclip,
   Sun,
   Moon,
-  PiggyBank,
+  // PiggyBank,
 } from 'lucide-react';
 
 type Theme = 'light' | 'dark';
@@ -617,7 +617,7 @@ function App() {
                   className={`w-full rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-[#B06A60] transition-colors duration-300 ${styles.inputBg}`}
                 />
                 <p className={`text-right text-sm mt-2 ${isDark ? 'text-[#B9AEA4]' : 'text-[#8A817B]'}`}>
-                  Words: {message.length}
+                  Characters: {message.length}
                 </p>
               </div>
 
@@ -651,18 +651,54 @@ function App() {
   );
 }
 
+// function NavItem({
+//   icon,
+//   text,
+//   onClick,
+//   theme,
+//   to,
+// }: {
+//   icon: React.ReactNode;
+//   text: string;
+//   onClick?: () => void;
+//   theme: Theme;
+//   to?: string;
+// }) {
+//   const className = `flex items-center space-x-1 transition-colors duration-200 ${
+//     theme === 'dark'
+//       ? 'text-[#E7DED2] hover:text-[#D2A092]'
+//       : 'text-[#4B4441] hover:text-[#A85C53]'
+//   }`;
+
+//   // Link
+//   if (to) {
+//     return (
+//       <Link to={to} className={className}>
+//         {icon}
+//         <span>{text}</span>
+//       </Link>
+//     );
+//   }
+
+//   // Button 
+//   return (
+//     <button onClick={onClick} className={className}>
+//       {icon}
+//       <span>{text}</span>
+//     </button>
+//   );
+// }
+
 function NavItem({
   icon,
   text,
   onClick,
   theme,
-  to,
 }: {
   icon: React.ReactNode;
   text: string;
   onClick?: () => void;
   theme: Theme;
-  to?: string;
 }) {
   const className = `flex items-center space-x-1 transition-colors duration-200 ${
     theme === 'dark'
@@ -670,17 +706,6 @@ function NavItem({
       : 'text-[#4B4441] hover:text-[#A85C53]'
   }`;
 
-  // Link
-  if (to) {
-    return (
-      <Link to={to} className={className}>
-        {icon}
-        <span>{text}</span>
-      </Link>
-    );
-  }
-
-  // Button 
   return (
     <button onClick={onClick} className={className}>
       {icon}
