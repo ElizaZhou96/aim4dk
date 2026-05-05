@@ -205,7 +205,7 @@ function App() {
                 <NavItem theme={theme} icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                 <NavItem theme={theme} icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <NavItem theme={theme} icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
-                <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Sponsors" to="/sponsorship" />
+                {/* <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Sponsors" to="/sponsorship" /> */}
                 <NavItem theme={theme} icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
               </div>
 
@@ -511,7 +511,7 @@ function App() {
                   workshop. If you are interested in data versioning, temporal degradation, reliable AI, or related topics,
                   you are very welcome to apply.{` `}
                   <a
-                    href="https://shorturl.at/uv4sv"
+                    href="https://docs.google.com/forms/d/1AWuthZB_Kplbqdx1wlSiDhGRZiY2pzF4Ob6x4A52CBo/viewform?edit_requested=true"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`inline-flex items-center px-3 py-2 text-sm font-medium rounded-full transition align-middle ${styles.pillSecondary}`}
