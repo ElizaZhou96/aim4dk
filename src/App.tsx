@@ -12,7 +12,7 @@ import {
   Paperclip,
   Sun,
   Moon,
-  // PiggyBank,
+  PiggyBank,
 } from 'lucide-react';
 
 type Theme = 'light' | 'dark';
@@ -201,11 +201,11 @@ function App() {
               <div className="hidden md:flex items-center space-x-8">
                 <NavItem theme={theme} icon={<Home size={16} />} text="Home" onClick={() => scrollToSection('home')} />
                 <NavItem theme={theme} icon={<Smile size={16} />} text="CFP" onClick={() => scrollToSection('cfp')} />
-                <NavItem theme={theme} icon={<Calendar size={16} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
+                <NavItem theme={theme} icon={<Calendar size={16} />} text="Program" onClick={() => scrollToSection('program')} />
                 <NavItem theme={theme} icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                 <NavItem theme={theme} icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <NavItem theme={theme} icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
-                {/* <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Sponsors" to="/sponsorship" /> */}
+                <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Community & Sponsorship" onClick={() => scrollToSection('sponsors')} " /> 
                 <NavItem theme={theme} icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
               </div>
 
@@ -244,7 +244,7 @@ function App() {
                 <div className="px-4 py-2 space-y-1">
                   <MobileNavItem theme={theme} icon={<Home size={16} />} text="Home" onClick={() => scrollToSection('home')} />
                   <MobileNavItem theme={theme} icon={<Smile size={16} />} text="CFP" onClick={() => scrollToSection('cfp')} />
-                  <MobileNavItem theme={theme} icon={<Calendar size={16} />} text="Schedule" onClick={() => scrollToSection('schedule')} />
+                  <MobileNavItem theme={theme} icon={<Calendar size={16} />} text="Program" onClick={() => scrollToSection('program')} />
                   <MobileNavItem theme={theme} icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                   <MobileNavItem theme={theme} icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                   <MobileNavItem theme={theme} icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
@@ -524,9 +524,9 @@ function App() {
           </div>
         </section>
 
-        <section id="schedule" className={`py-16 transition-colors duration-300 ${styles.lightSection}`}>
+        <section id="program" className={`py-16 transition-colors duration-300 ${styles.lightSection}`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnLight}`}>Schedule (TBA)</h2>
+            <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnLight}`}>Program (TBA)</h2>
           </div>
         </section>
 
@@ -570,6 +570,72 @@ function App() {
           </div>
         </section>
 
+        <section id="sponsors" className={`py-16 transition-colors duration-300 ${styles.darkSection}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnDark}`}>Community & Sponsorship</h2>
+
+            <p className="max-w-3xl mx-auto text-center text-[#E7DED2] leading-8 mb-10">
+            AIM4DK welcomes collaborations with research organizations, academic initiatives,
+            and industry groups interested in reliable AI, reproducibility, scientific knowledge
+            infrastructures, and temporally robust machine learning systems.
+            <br /><br />
+            We are especially interested in community partnerships, invited sessions,
+            and institutional support that help foster interdisciplinary discussions
+            around disappearing knowledge and long-term AI reliability.
+          </p>
+      
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+            {/* Community Partner Card */}
+            <div className="bg-[#F5EFE6] text-[#3A3533] rounded-2xl border border-[#D8C7BA] shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-[#A85C53] mb-4">
+                Community Partners
+              </h3>
+      
+              <p className="text-[#5A524F] leading-7 mb-5">
+                We welcome collaborations with research consortia, scientific infrastructures,
+                and academic communities interested in contributing invited talks,
+                panel discussions, focused sessions, or cross-community initiatives.
+              </p>
+      
+              <a
+                href="/AIM4DK_Community_Partnership.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-5 py-2.5 text-sm font-semibold rounded-full bg-[#A85C53] text-[#FDF9F4] shadow-md hover:bg-[#935047] hover:shadow-lg transition-all duration-200"
+              >
+                Community Partnership Invitation
+              </a>
+            </div>
+      
+            {/* Sponsor Card */}
+            <div className="bg-[#F5EFE6] text-[#3A3533] rounded-2xl border border-[#D8C7BA] shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-[#A85C53] mb-4">
+                Sponsors & Supporters
+              </h3>
+      
+              <p className="text-[#5A524F] leading-7 mb-5">
+                Sponsorship support helps facilitate international participation,
+                interdisciplinary exchange, and community-building activities
+                during the workshop at IJCAI-ECAI 2026.
+              </p>
+      
+              <a
+                href="/AIM4DK_Sponsorship_Prospectus.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-5 py-2.5 text-sm font-semibold rounded-full bg-[#EADFD4] text-[#8A4E46] shadow-sm hover:bg-[#DDCDBE] hover:shadow-md transition-all duration-200"
+              >
+                Sponsorship Prospectus
+              </a>
+            </div>
+      
+          </div>
+              
+        </div>
+        </section>
+
+        
         <section id="review" className={`py-16 transition-colors duration-300 ${styles.darkSection}`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnDark}`}>Review</h2>
