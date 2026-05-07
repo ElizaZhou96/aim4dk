@@ -205,7 +205,7 @@ function App() {
                 <NavItem theme={theme} icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                 <NavItem theme={theme} icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <NavItem theme={theme} icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
-                <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Community & Sponsorship" onClick={() => scrollToSection('sponsors')} /> 
+                <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Support" onClick={() => scrollToSection('sponsors')} /> 
                 <NavItem theme={theme} icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
               </div>
 
@@ -248,7 +248,7 @@ function App() {
                   <MobileNavItem theme={theme} icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                   <MobileNavItem theme={theme} icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                   <MobileNavItem theme={theme} icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
-                  <MobileNavItem theme={theme} icon={<PiggyBank size={16} />} text="Community & Sponsorship" onClick={() => scrollToSection('sponsors')} /> 
+                  <MobileNavItem theme={theme} icon={<PiggyBank size={16} />} text="Support" onClick={() => scrollToSection('sponsors')} /> 
                   <MobileNavItem theme={theme} icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
                 </div>
               </div>
@@ -570,74 +570,7 @@ function App() {
             </div>
           </div>
         </section>
-
-        <section id="sponsors" className={`py-16 transition-colors duration-300 ${styles.darkSection}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnDark}`}>Community & Sponsorship</h2>
-
-            {/* <p className="max-w-3xl mx-auto text-center text-[#E7DED2] leading-8 mb-10"> */}
-            <p className={`max-w-3xl mx-auto text-center leading-8 mb-10 ${isDark ? 'text-[#E7DED2]' : 'text-[#5A524F]'}`}>
-            AIM4DK welcomes collaborations with research organizations, academic initiatives,
-            and industry groups interested in reliable AI, reproducibility, scientific knowledge
-            infrastructures, and temporally robust machine learning systems.
-            <br /><br />
-            We are especially interested in community partnerships, invited sessions,
-            and institutional support that help foster interdisciplinary discussions
-            around disappearing knowledge and long-term AI reliability.
-          </p>
-      
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      
-            {/* Community Partner Card */}
-            <div className="bg-[#F5EFE6] text-[#3A3533] rounded-2xl border border-[#D8C7BA] shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-[#A85C53] mb-4">
-                Community Partners
-              </h3>
-      
-              <p className="text-[#5A524F] leading-7 mb-5">
-                We welcome collaborations with research consortia, scientific infrastructures,
-                and academic communities interested in contributing invited talks,
-                panel discussions, focused sessions, or cross-community initiatives.
-              </p>
-      
-              <a
-                href="/AIM4DK_Community_Partnership.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-5 py-2.5 text-sm font-semibold rounded-full bg-[#A85C53] text-[#FDF9F4] shadow-md hover:bg-[#935047] hover:shadow-lg transition-all duration-200"
-              >
-                Community Partnership Invitation
-              </a>
-            </div>
-      
-            {/* Sponsor Card */}
-            <div className="bg-[#F5EFE6] text-[#3A3533] rounded-2xl border border-[#D8C7BA] shadow-lg p-6">
-              <h3 className="text-xl font-semibold text-[#A85C53] mb-4">
-                Sponsors & Supporters
-              </h3>
-      
-              <p className="text-[#5A524F] leading-7 mb-5">
-                Sponsorship support helps facilitate international participation,
-                interdisciplinary exchange, and community-building activities
-                during the workshop at IJCAI-ECAI 2026.
-              </p>
-      
-              <a
-                href="/AIM4DK_Sponsorship_Prospectus.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-5 py-2.5 text-sm font-semibold rounded-full bg-[#EADFD4] text-[#8A4E46] shadow-sm hover:bg-[#DDCDBE] hover:shadow-md transition-all duration-200"
-              >
-                Sponsorship Prospectus
-              </a>
-            </div>
-      
-          </div>
-              
-        </div>
-        </section>
-
-        
+                
         <section id="review" className={`py-16 transition-colors duration-300 ${styles.darkSection}`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnDark}`}>Review</h2>
@@ -645,7 +578,110 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className={`py-16 transition-colors duration-300 ${styles.lightSection}`}>
+        <section id="sponsors" className={`py-16 transition-colors duration-300 ${styles.lightSection}`}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className={`text-3xl font-bold mb-4 text-center ${styles.headingOnDark}`}>
+              Community & Support
+            </h2>
+        
+            <p className={`max-w-3xl mx-auto text-center leading-8 mb-10 ${isDark ? 'text-[#E7DED2]' : 'text-[#5A524F]'}`}>
+              AIM4DK welcomes collaborations and support from research organizations, academic initiatives,
+              public institutions, and industry groups working on reliable AI, reproducibility, scientific
+              knowledge infrastructures, and temporally robust machine learning.
+            </p>
+        
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+              {/* Community Partner Card */}
+              <div
+                className={`rounded-2xl border shadow-lg p-6 sm:p-7 flex flex-col transition-colors duration-300 ${
+                  isDark
+                    ? 'bg-[#3A3533] border-[#5A4745] text-[#F5EFE6]'
+                    : 'bg-[#F9F4EE] border-[#DDCEC3] text-[#3A3533]'
+                }`}
+              >
+                <div className="mb-5">
+                  <p className={`text-sm font-semibold mb-2 ${styles.accentText}`}>
+                    For research communities and institutions
+                  </p>
+                  <h3 className={`text-xl font-semibold mb-4 ${styles.strongText}`}>
+                    Community Partners
+                  </h3>
+        
+                  <p className={`leading-7 ${isDark ? 'text-[#E7DED2]' : 'text-[#5A524F]'}`}>
+                    We welcome community partners who would like to shape the discussion around
+                    disappearing knowledge, research data sustainability, reproducibility, and long-term
+                    AI reliability. Partnerships may include invited sessions, panel participation,
+                    cross-community outreach, or dissemination support.
+                  </p>
+                </div>
+        
+                <ul className={`list-disc pl-5 space-y-2 mb-6 ${isDark ? 'text-[#E7DED2]' : 'text-[#5A524F]'}`}>
+                  <li>Co-branded or focused workshop sessions</li>
+                  <li>Invited talks, panels, or expert discussions</li>
+                  <li>Visibility on the AIM4DK website and workshop materials</li>
+                  <li>Cross-promotion through relevant academic communities</li>
+                </ul>
+        
+                <div className="mt-auto">
+                  <a
+                    href="/aaa.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 ${styles.pillPrimary}`}
+                  >
+                    Partnership Invitation
+                  </a>
+                </div>
+              </div>
+        
+              {/* Sponsor Card */}
+              <div
+                className={`rounded-2xl border shadow-lg p-6 sm:p-7 flex flex-col transition-colors duration-300 ${
+                  isDark
+                    ? 'bg-[#3A3533] border-[#5A4745] text-[#F5EFE6]'
+                    : 'bg-[#F9F4EE] border-[#DDCEC3] text-[#3A3533]'
+                }`}
+              >
+                <div className="mb-5">
+                  <p className={`text-sm font-semibold mb-2 ${styles.accentText}`}>
+                    For sponsors and institutional supporters
+                  </p>
+                  <h3 className={`text-xl font-semibold mb-4 ${styles.strongText}`}>
+                    Sponsors & Supporters
+                  </h3>
+        
+                  <p className={`leading-7 ${isDark ? 'text-[#E7DED2]' : 'text-[#5A524F]'}`}>
+                    Sponsorship helps make AIM4DK a truly international and inclusive workshop by
+                    supporting participation, travel, invited speakers, and community-building activities
+                    at IJCAI-ECAI 2026. Supporters will be acknowledged in workshop materials and on
+                    the website.
+                  </p>
+                </div>
+        
+                <ul className={`list-disc pl-5 space-y-2 mb-6 ${isDark ? 'text-[#E7DED2]' : 'text-[#5A524F]'}`}>
+                  <li>Support international participation and organizer attendance</li>
+                  <li>Enable invited talks, panels, and interdisciplinary exchange</li>
+                  <li>Receive acknowledgement on the website and opening slides</li>
+                  <li>Contribute to reliable AI and reproducible research communities</li>
+                </ul>
+        
+                <div className="mt-auto">
+                  <a
+                    href="/bbb.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full shadow-sm hover:shadow-md transition-all duration-200 ${styles.pillSecondary}`}
+                  >
+                    Sponsorship Prospectus
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="contact" className={`py-16 transition-colors duration-300 ${styles.darkSection}`}>
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnLight}`}>Contact Us</h2>
 
