@@ -205,7 +205,7 @@ function App() {
                 <NavItem theme={theme} icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                 <NavItem theme={theme} icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                 <NavItem theme={theme} icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
-                <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Community & Sponsorship" onClick={() => scrollToSection('sponsors')} " /> 
+                <NavItem theme={theme} icon={<PiggyBank size={16} />} text="Community & Sponsorship" onClick={() => scrollToSection('sponsors')} /> 
                 <NavItem theme={theme} icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
               </div>
 
@@ -248,6 +248,7 @@ function App() {
                   <MobileNavItem theme={theme} icon={<Presentation size={16} />} text="Speakers" onClick={() => scrollToSection('speaker')} />
                   <MobileNavItem theme={theme} icon={<Users size={16} />} text="Organizer" onClick={() => scrollToSection('organizer')} />
                   <MobileNavItem theme={theme} icon={<Paperclip size={16} />} text="Review" onClick={() => scrollToSection('review')} />
+                  <MobileNavItem theme={theme} icon={<PiggyBank size={16} />} text="Community & Sponsorship" onClick={() => scrollToSection('sponsors')} /> 
                   <MobileNavItem theme={theme} icon={<BookOpen size={16} />} text="Contact" onClick={() => scrollToSection('contact')} />
                 </div>
               </div>
@@ -574,7 +575,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnDark}`}>Community & Sponsorship</h2>
 
-            <p className="max-w-3xl mx-auto text-center text-[#E7DED2] leading-8 mb-10">
+            {/* <p className="max-w-3xl mx-auto text-center text-[#E7DED2] leading-8 mb-10"> */}
+            <p className={`max-w-3xl mx-auto text-center leading-8 mb-10 ${isDark ? 'text-[#E7DED2]' : 'text-[#5A524F]'}`}>
             AIM4DK welcomes collaborations with research organizations, academic initiatives,
             and industry groups interested in reliable AI, reproducibility, scientific knowledge
             infrastructures, and temporally robust machine learning systems.
