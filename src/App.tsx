@@ -670,7 +670,7 @@ function App() {
                     href="/bbb.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full shadow-sm hover:shadow-md transition-all duration-200 ${styles.pillSecondary}`}
+                    className={`inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-200 ${styles.pillPrimary}`}
                   >
                     Sponsorship Prospectus
                   </a>
