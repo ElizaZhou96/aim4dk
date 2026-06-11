@@ -269,7 +269,7 @@ function App() {
               Reliable AI in a Challenging World
               <br />
               <strong className={`font-bold ${isDark ? 'text-[#F5EFE6]' : 'text-[#3A3533]'}`}>
-                📅 Half-Day August 15, 2026 (TBA)
+                📅 Half-Day August 15, 2026
               </strong>{' '}
               📍Bremen, Germany
             </p>
