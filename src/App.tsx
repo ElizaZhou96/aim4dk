@@ -269,7 +269,7 @@ function App() {
               Reliable AI in a Challenging World
               <br />
               <strong className={`font-bold ${isDark ? 'text-[#F5EFE6]' : 'text-[#3A3533]'}`}>
-                📅 Full-Day August 15/16/17, 2026 (TBA)
+                📅 Half-Day August 15, 2026 (TBA)
               </strong>{' '}
               📍Bremen, Germany
             </p>
@@ -457,7 +457,7 @@ function App() {
                     Camera Ready Submission: <span className="font-bold">June 30, 2026 (23:59 AoE)</span>
                   </li>
                   <li>
-                    Workshop Date (TBA): <span className="font-bold">August 15-17, 2026</span>
+                    Workshop Date (TBA): <span className="font-bold">August 15, 2026</span>
                   </li>
                 </ul>
               </div>
