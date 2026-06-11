@@ -451,7 +451,10 @@ function App() {
                     Early Registration: <span className="font-bold">June 15, 2026 (23:59 AoE)</span>
                   </li>
                   <li>
-                    Camera Ready Submission: <span className="font-bold">July 1, 2026 (23:59 AoE)</span>
+                    [⭐New] Invited Paper Submission Deadline: <span className="font-bold">June 26, 2026 (23:59 AoE)</span>
+                  </li>
+                  <li>
+                    Camera Ready Submission: <span className="font-bold">June 30, 2026 (23:59 AoE)</span>
                   </li>
                   <li>
                     Workshop Date (TBA): <span className="font-bold">August 15-17, 2026</span>
