@@ -960,7 +960,7 @@ function SpeakerCard({
   const shouldCollapse = wordCount > 200;
 
   return (
-    /*<div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">*/
+  {/*<div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">*/}
 	  <div
   className={`hidden md:block relative overflow-hidden rounded-2xl border px-6 py-7 shadow-xl w-full h-full mx-auto transition-colors duration-300 ${
     theme === 'dark'
@@ -1000,7 +1000,7 @@ function SpeakerCard({
         </div>
 
         {/* RIGHT */}
-        /* <div className="flex-1 text-left text-gray-700 text-sm"> */
+		  {/* <div className="flex-1 text-left text-gray-700 text-sm"> */}
 		<div
 		  className={`text-left text-sm leading-7 ${
 		    theme === 'dark' ? 'text-[#E7DED2]' : 'text-[#5A524F]'
@@ -1089,7 +1089,7 @@ function SpeakerCardMobile({
   const shouldCollapse = wordCount > 200;
 
   return (
-    /*<div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">*/
+	  {/*<div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">*/}
 	<div
   className={`block md:hidden relative overflow-hidden rounded-2xl border px-6 py-7 shadow-xl w-full h-full mx-auto transition-colors duration-300 ${
     theme === 'dark'
