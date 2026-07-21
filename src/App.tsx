@@ -260,7 +260,7 @@ function App() {
           id="home"
           className={`w-full px-4 sm:px-6 lg:px-8 py-20 md:py-24 transition-colors duration-300 ${styles.hero}`}
         >
-          <div className="max-w-7xl mx-auto text-center">
+          <div className="max-w-7xl mx-auto text-center mb-16">
             <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${isDark ? 'text-[#C98A7A]' : 'text-[#A85C53]'}`}>
               AI Modeling for Disappearing Knowledge (AIM4DK)
             </h1>
@@ -540,30 +540,34 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnDark}`}>Keynote Speaker</h2>
             <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-        			<div id="speaker-1" className="scroll-mt-24">
-        			  <SpeakerCard
+        		<div id="speaker-1" className="scroll-mt-24">
+        		<SpeakerCard
                 name="Motasem Alfarra"
                 role="Machine Learning Researcher at Qualcomm AI Research, Amsterdam, Netherlands"
                 image="/motasem.png"
                 website="https://motasemalfarra.netlify.app/"
-        			  title="TBA"
-        			  bio="Motasem Alfarra is a Research Scientist at Qualcomm AI Research in Amsterdam, the Netherlands, where he works on robustness, alignment, and adaptation in machine learning. He received his Ph.D. from KAUST, focusing on addressing domain shifts in deep learning. Motasem co-organized the first and second Workshops on Test-Time Adaptation at CVPR 2024 and ICML 2025, as well as the ICLR 2026 Workshop on Monitoring ML Models Under Drift."
-                />
+        		title="TBA"
+        		bio="Motasem Alfarra is a Research Scientist at Qualcomm AI Research in Amsterdam, the Netherlands, where he works on robustness, alignment, and adaptation in machine learning. He received his Ph.D. from KAUST, focusing on addressing domain shifts in deep learning. Motasem co-organized the first and second Workshops on Test-Time Adaptation at CVPR 2024 and ICML 2025, as well as the ICLR 2026 Workshop on Monitoring ML Models Under Drift."
+                theme={theme}
+					/>
                 <SpeakerCardMobile
                 name="Motasem Alfarra"
                 role="Machine Learning Researcher at Qualcomm AI Research, Amsterdam, Netherlands"
                 image="/motasem.png"
                 website="https://motasemalfarra.netlify.app/"
-        			  title="TBA"
-        			  bio="Motasem Alfarra is a Research Scientist at Qualcomm AI Research in Amsterdam, the Netherlands, where he works on robustness, alignment, and adaptation in machine learning. He received his Ph.D. from KAUST, focusing on addressing domain shifts in deep learning. Motasem co-organized the first and second Workshops on Test-Time Adaptation at CVPR 2024 and ICML 2025, as well as the ICLR 2026 Workshop on Monitoring ML Models Under Drift."
-                />
+        		title="TBA"
+        		bio="Motasem Alfarra is a Research Scientist at Qualcomm AI Research in Amsterdam, the Netherlands, where he works on robustness, alignment, and adaptation in machine learning. He received his Ph.D. from KAUST, focusing on addressing domain shifts in deep learning. Motasem co-organized the first and second Workshops on Test-Time Adaptation at CVPR 2024 and ICML 2025, as well as the ICLR 2026 Workshop on Monitoring ML Models Under Drift."
+                theme={theme}
+					/>
 				</div>
 			</div>
           </div>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnDark}`}>Invited Speakers (TBA)</h2>
-          </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+			  <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnDark}`}>
+			    Invited Speakers (TBA)
+			  </h2>
+			</div>
         </section>
 
         <section id="organizer" className={`py-16 transition-colors duration-300 ${styles.lightSection}`}>
@@ -936,6 +940,7 @@ function SpeakerCard({
   website,
   bio,
   title,
+  theme,
 }: {
   name: string;
   role: string;
@@ -943,6 +948,7 @@ function SpeakerCard({
   website: string;
   bio: string;
   title: string;
+  theme: Theme;
 }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -954,35 +960,59 @@ function SpeakerCard({
   const shouldCollapse = wordCount > 200;
 
   return (
-    <div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">
+    /*<div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">*/
+	  <div
+  className={`hidden md:block relative overflow-hidden rounded-2xl border px-6 py-7 shadow-xl w-full h-full mx-auto transition-colors duration-300 ${
+    theme === 'dark'
+      ? 'bg-[#3A3533] border-[#5A4745]'
+      : 'bg-[#F9F4EE] border-[#DDCEC3]'
+  }`}
+>
 
-      <div className="flex flex-row items-start gap-6">
+      <div className="grid grid-cols-[minmax(260px,0.9fr)_minmax(0,1.1fr)] gap-8 items-start">
 
         {/* LEFT */}
         <div className="flex-shrink-0 w-48 text-center">
           <img
             src={image}
             alt={name}
-            className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto animate-fadeIn"
+            className="w-44 h-44 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto animate-fadeIn"
           />
 
           <a
             href={website}
             target="_blank"
             rel="noopener noreferrer"
-            className="block text-xl font-semibold text-[#77428D] mb-2 hover:underline animate-fadeIn"
+            className={`block text-2xl font-semibold mb-3 hover:underline animate-fadeIn ${
+			  theme === 'dark' ? 'text-[#D2A092]' : 'text-[#A85C53]'
+			}`}
           >
             {name}
           </a>
 
-          <p className="text-gray-600 text-sm animate-fadeIn">{role}</p>
+          <p
+		  className={`text-base leading-7 animate-fadeIn ${
+		    theme === 'dark' ? 'text-[#E7DED2]' : 'text-[#5A524F]'
+		  }`}
+		>
+		  {role}
+		</p>
         </div>
 
         {/* RIGHT */}
-        <div className="flex-1 text-left text-gray-700 text-sm">
+        /* <div className="flex-1 text-left text-gray-700 text-sm"> */
+		<div
+		  className={`text-left text-sm leading-7 ${
+		    theme === 'dark' ? 'text-[#E7DED2]' : 'text-[#5A524F]'
+		  }`}
+		>
 
           {/* Title */}
-          <p className="text-lg font-semibold text-[#77428D] mb-3 animate-fadeIn">
+          <p
+			  className={`text-xl font-semibold mb-4 animate-fadeIn ${
+			    theme === 'dark' ? 'text-[#D2A092]' : 'text-[#A85C53]'
+			  }`}
+			>
             {title}
           </p>
 
@@ -1014,7 +1044,9 @@ function SpeakerCard({
               <button
                 type="button"
                 onClick={() => setExpanded(!expanded)}
-                className="mt-3 block text-[#77428D] font-semibold inline-flex items-center gap-1 hover:opacity-80 transition"
+                className={`mt-4 inline-flex items-center gap-1 font-semibold hover:opacity-80 transition ${
+				  theme === 'dark' ? 'text-[#D2A092]' : 'text-[#A85C53]'
+				}`}
               >
                 {expanded ? "Show Less" : "Read More"}
                 <span
@@ -1040,6 +1072,7 @@ function SpeakerCardMobile({
   website,
   bio,
   title,
+  theme,
 }: {
   name: string;
   role: string;
@@ -1047,6 +1080,7 @@ function SpeakerCardMobile({
   website: string;
   bio: string;
   title: string;
+  theme: Theme;
 }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -1055,7 +1089,14 @@ function SpeakerCardMobile({
   const shouldCollapse = wordCount > 200;
 
   return (
-    <div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">
+    /*<div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">*/
+	<div
+  className={`block md:hidden relative overflow-hidden rounded-2xl border px-6 py-7 shadow-xl w-full h-full mx-auto transition-colors duration-300 ${
+    theme === 'dark'
+      ? 'bg-[#3A3533] border-[#5A4745]'
+      : 'bg-[#F9F4EE] border-[#DDCEC3]'
+  }`}
+>
 
       {/* fade-in animation */}
       <style>{`
@@ -1073,7 +1114,7 @@ function SpeakerCardMobile({
         <img
           src={image}
           alt={name}
-          className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto animate-fadeIn"
+          className="w-44 h-44 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto animate-fadeIn"
         />
 
         <a
