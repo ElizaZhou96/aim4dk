@@ -557,6 +557,8 @@ function App() {
         			  title="TBA"
         			  bio="Motasem Alfarra is a Research Scientist at Qualcomm AI Research in Amsterdam, the Netherlands, where he works on robustness, alignment, and adaptation in machine learning. He received his Ph.D. from KAUST, focusing on addressing domain shifts in deep learning. Motasem co-organized the first and second Workshops on Test-Time Adaptation at CVPR 2024 and ICML 2025, as well as the ICLR 2026 Workshop on Monitoring ML Models Under Drift."
                 />
+				</div>
+			</div>
           </div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
