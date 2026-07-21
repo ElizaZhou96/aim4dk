@@ -267,11 +267,13 @@ function App() {
 
             <p className={`text-lg mb-8 ${isDark ? 'text-[#E7DED2]' : 'text-[#5A524F]'}`}>
               Reliable AI in a Challenging World
-              <br />
-              <strong className={`font-bold ${isDark ? 'text-[#F5EFE6]' : 'text-[#3A3533]'}`}>
-                📅 Half-Day August 15, 2026
-              </strong>{' '}
-              📍Bremen, Germany
+              <br /><strong className="font-bold text-gray-800"> 📅 Date:</strong> Saturday, August 15th 2026  <strong className="font-bold text-gray-800"> ⏰Time:</strong> 14:00 - 17:30
+			        <strong className="font-bold text-gray-800"> 📍Location:</strong> Room WS Room 1, <a
+				      href="https://2026.ijcai.org/venues/"
+				      target="_blank"
+				      rel="noopener noreferrer"
+				      className="underline hover:text-[#77428D]"
+				    > University of Bremen</a>, Bremen, Germany
             </p>
 
             <div className="mt-10 w-full relative overflow-hidden rounded-2xl shadow-lg">
@@ -535,6 +537,28 @@ function App() {
         </section>
 
         <section id="speaker" className={`py-16 transition-colors duration-300 ${styles.darkSection}`}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnDark}`}>Keynote Speaker</h2>
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+        			<div id="speaker-1" className="scroll-mt-24">
+        			  <SpeakerCard
+                name="Motasem Alfarra"
+                role="Machine Learning Researcher at Qualcomm AI Research, Amsterdam, Netherlands"
+                image="/motasem.png"
+                website="https://motasemalfarra.netlify.app/"
+        			  title="TBA"
+        			  bio="Motasem Alfarra is a Research Scientist at Qualcomm AI Research in Amsterdam, the Netherlands, where he works on robustness, alignment, and adaptation in machine learning. He received his Ph.D. from KAUST, focusing on addressing domain shifts in deep learning. Motasem co-organized the first and second Workshops on Test-Time Adaptation at CVPR 2024 and ICML 2025, as well as the ICLR 2026 Workshop on Monitoring ML Models Under Drift."
+                />
+                <SpeakerCardMobile
+                name="Motasem Alfarra"
+                role="Machine Learning Researcher at Qualcomm AI Research, Amsterdam, Netherlands"
+                image="/motasem.png"
+                website="https://motasemalfarra.netlify.app/"
+        			  title="TBA"
+        			  bio="Motasem Alfarra is a Research Scientist at Qualcomm AI Research in Amsterdam, the Netherlands, where he works on robustness, alignment, and adaptation in machine learning. He received his Ph.D. from KAUST, focusing on addressing domain shifts in deep learning. Motasem co-organized the first and second Workshops on Test-Time Adaptation at CVPR 2024 and ICML 2025, as well as the ICLR 2026 Workshop on Monitoring ML Models Under Drift."
+                />
+          </div>
+
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className={`text-3xl font-bold mb-8 text-center ${styles.headingOnDark}`}>Invited Speakers (TBA)</h2>
           </div>
@@ -903,6 +927,219 @@ function TopicCard({
   );
 }
 
+function SpeakerCard({
+  name,
+  role,
+  image,
+  website,
+  bio,
+  title,
+}: {
+  name: string;
+  role: string;
+  image: string;
+  website: string;
+  bio: string;
+  title: string;
+}) {
+  const [expanded, setExpanded] = useState(false);
+
+  const paragraphs = bio ? bio.split("\n") : [];
+  const firstParagraph = paragraphs[0] || "";
+  const restParagraphs = paragraphs.slice(1);
+
+  const wordCount = bio ? bio.split(/\s+/).length : 0;
+  const shouldCollapse = wordCount > 200;
+
+  return (
+    <div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">
+
+      <div className="flex flex-row items-start gap-6">
+
+        {/* LEFT */}
+        <div className="flex-shrink-0 w-48 text-center">
+          <img
+            src={image}
+            alt={name}
+            className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto animate-fadeIn"
+          />
+
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-xl font-semibold text-[#77428D] mb-2 hover:underline animate-fadeIn"
+          >
+            {name}
+          </a>
+
+          <p className="text-gray-600 text-sm animate-fadeIn">{role}</p>
+        </div>
+
+        {/* RIGHT */}
+        <div className="flex-1 text-left text-gray-700 text-sm">
+
+          {/* Title */}
+          <p className="text-lg font-semibold text-[#77428D] mb-3 animate-fadeIn">
+            {title}
+          </p>
+
+          {/* Short bio */}
+          {!shouldCollapse && (
+            paragraphs.map((p, i) => (
+              <p key={i} className="mb-3">{p}</p>
+            ))
+          )}
+
+          {/* Long bio (fold) */}
+          {shouldCollapse && (
+            <>
+              {/* Always show first paragraph */}
+              <p className="mb-3 animate-fadeIn">{firstParagraph}</p>
+
+              {/* Collapsible part */}
+              <div
+                className="transition-all duration-500 overflow-hidden"
+                style={{ maxHeight: expanded ? "2000px" : "0px" }}
+              >
+                {/* Fade-in paragraphs */}
+                {restParagraphs.map((p, i) => (
+                  <p key={i} className="mb-3 animate-fadeIn">{p}</p>
+                ))}
+              </div>
+
+              {/* Read More Button */}
+              <button
+                type="button"
+                onClick={() => setExpanded(!expanded)}
+                className="mt-3 block text-[#77428D] font-semibold inline-flex items-center gap-1 hover:opacity-80 transition"
+              >
+                {expanded ? "Show Less" : "Read More"}
+                <span
+                  className={`transform transition-transform duration-300 ${
+                    expanded ? "rotate-180" : "rotate-0"
+                  }`}
+                >
+                  ▼
+                </span>
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SpeakerCardMobile({
+  name,
+  role,
+  image,
+  website,
+  bio,
+  title,
+}: {
+  name: string;
+  role: string;
+  image: string;
+  website: string;
+  bio: string;
+  title: string;
+}) {
+  const [expanded, setExpanded] = useState(false);
+
+  const paragraphs = bio ? bio.split("\n") : [];
+  const wordCount = bio ? bio.split(/\s+/).length : 0;
+  const shouldCollapse = wordCount > 200;
+
+  return (
+    <div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">
+
+      {/* fade-in animation */}
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(6px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.5s ease forwards;
+        }
+      `}</style>
+
+      <div className="text-center">
+        
+        <img
+          src={image}
+          alt={name}
+          className="w-32 h-32 rounded-lg object-cover border border-white/40 shadow-md mb-4 mx-auto animate-fadeIn"
+        />
+
+        <a
+          href={website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block text-xl font-semibold text-[#77428D] mb-2 hover:underline animate-fadeIn"
+        >
+          {name}
+        </a>
+
+        <p className="text-gray-600 text-sm mb-4 animate-fadeIn">{role}</p>
+
+        {/* Title ALWAYS visible on mobile */}
+        <p className="text-base font-semibold text-[#77428D] mb-3 text-left animate-fadeIn">
+          {title}
+        </p>
+
+        <div className="text-gray-700 text-sm text-left">
+
+          {/* If bio short → show full */}
+          {!shouldCollapse && (
+            paragraphs.map((p, i) => (
+              <p key={i} className="mb-3 animate-fadeIn">{p}</p>
+            ))
+          )}
+
+          {/* If long bio */}
+          {shouldCollapse && (
+            <>
+              {/* animated collapsible */}
+              <div
+                className="transition-all duration-500 overflow-hidden"
+                style={{ maxHeight: expanded ? "2000px" : "0px" }}
+              >
+                {paragraphs.map((p, i) => (
+                  <p key={i} className="mb-3 animate-fadeIn">{p}</p>
+                ))}
+              </div>
+
+              {/* gradient fade overlay (only collapsed) */}
+              {!expanded && (
+                <div className="pointer-events-none absolute bottom-16 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-white/80"></div>
+              )}
+
+              <button
+                type="button"
+                onClick={() => setExpanded(!expanded)}
+                className="mt-2 text-[#77428D] font-semibold inline-flex items-center gap-1 hover:opacity-80 transition"
+              >
+                {expanded ? "Show Less" : "Read More"}
+                <span
+                  className={`transform transition-transform duration-300 ${
+                    expanded ? "rotate-180" : "rotate-0"
+                  }`}
+                >
+                  ▼
+                </span>
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+        
 function OrganizerCard({
   name,
   role,
