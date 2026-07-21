@@ -656,7 +656,7 @@ function App() {
                   <li>Cross-promotion through relevant academic communities</li>
                 </ul>
         
-                <div className="mt-auto">
+                {/* <div className="mt-auto">
                   <a
                     href="/aaa.pdf"
                     target="_blank"
@@ -665,7 +665,8 @@ function App() {
                   >
                     Partnership Invitation
                   </a>
-                </div>
+                </div> */}
+				  
               </div>
         
               {/* Sponsor Card */}
@@ -699,7 +700,7 @@ function App() {
                   <li>Contribute to reliable AI and reproducible research communities</li>
                 </ul>
         
-                <div className="mt-auto">
+                {/* <div className="mt-auto">
                   <a
                     href="/bbb.pdf"
                     target="_blank"
@@ -708,7 +709,7 @@ function App() {
                   >
                     Sponsorship Prospectus
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
