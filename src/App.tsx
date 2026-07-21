@@ -952,27 +952,24 @@ function SpeakerCard({
 }) {
   const [expanded, setExpanded] = useState(false);
 
-  const paragraphs = bio ? bio.split("\n") : [];
-  const firstParagraph = paragraphs[0] || "";
+  const paragraphs = bio ? bio.split('\n') : [];
+  const firstParagraph = paragraphs[0] || '';
   const restParagraphs = paragraphs.slice(1);
 
   const wordCount = bio ? bio.split(/\s+/).length : 0;
   const shouldCollapse = wordCount > 200;
 
   return (
-  {/*<div className="hidden md:block relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-6 py-7 shadow-xl backdrop-blur-xl w-full h-full mx-auto">*/}
-	  <div
-  className={`hidden md:block relative overflow-hidden rounded-2xl border px-6 py-7 shadow-xl w-full h-full mx-auto transition-colors duration-300 ${
-    theme === 'dark'
-      ? 'bg-[#3A3533] border-[#5A4745]'
-      : 'bg-[#F9F4EE] border-[#DDCEC3]'
-  }`}
->
-
+    <div
+      className={`hidden md:block relative overflow-hidden rounded-2xl border px-6 py-7 shadow-xl w-full h-full mx-auto transition-colors duration-300 ${
+        theme === 'dark'
+          ? 'bg-[#3A3533] border-[#5A4745]'
+          : 'bg-[#F9F4EE] border-[#DDCEC3]'
+      }`}
+    >
       <div className="grid grid-cols-[minmax(260px,0.9fr)_minmax(0,1.1fr)] gap-8 items-start">
-
         {/* LEFT */}
-        <div className="flex-shrink-0 w-48 text-center">
+        <div className="text-center">
           <img
             src={image}
             alt={name}
@@ -984,74 +981,69 @@ function SpeakerCard({
             target="_blank"
             rel="noopener noreferrer"
             className={`block text-2xl font-semibold mb-3 hover:underline animate-fadeIn ${
-			  theme === 'dark' ? 'text-[#D2A092]' : 'text-[#A85C53]'
-			}`}
+              theme === 'dark' ? 'text-[#D2A092]' : 'text-[#A85C53]'
+            }`}
           >
             {name}
           </a>
 
           <p
-		  className={`text-base leading-7 animate-fadeIn ${
-		    theme === 'dark' ? 'text-[#E7DED2]' : 'text-[#5A524F]'
-		  }`}
-		>
-		  {role}
-		</p>
+            className={`text-base leading-7 animate-fadeIn ${
+              theme === 'dark' ? 'text-[#E7DED2]' : 'text-[#5A524F]'
+            }`}
+          >
+            {role}
+          </p>
         </div>
 
         {/* RIGHT */}
-		  {/* <div className="flex-1 text-left text-gray-700 text-sm"> */}
-		<div
-		  className={`text-left text-sm leading-7 ${
-		    theme === 'dark' ? 'text-[#E7DED2]' : 'text-[#5A524F]'
-		  }`}
-		>
-
-          {/* Title */}
+        <div
+          className={`text-left text-sm leading-7 ${
+            theme === 'dark' ? 'text-[#E7DED2]' : 'text-[#5A524F]'
+          }`}
+        >
           <p
-			  className={`text-xl font-semibold mb-4 animate-fadeIn ${
-			    theme === 'dark' ? 'text-[#D2A092]' : 'text-[#A85C53]'
-			  }`}
-			>
+            className={`text-xl font-semibold mb-4 animate-fadeIn ${
+              theme === 'dark' ? 'text-[#D2A092]' : 'text-[#A85C53]'
+            }`}
+          >
             {title}
           </p>
 
-          {/* Short bio */}
-          {!shouldCollapse && (
-            paragraphs.map((p, i) => (
-              <p key={i} className="mb-3">{p}</p>
-            ))
-          )}
+          {!shouldCollapse &&
+            paragraphs.map((paragraph, index) => (
+              <p key={index} className="mb-3 animate-fadeIn">
+                {paragraph}
+              </p>
+            ))}
 
-          {/* Long bio (fold) */}
           {shouldCollapse && (
             <>
-              {/* Always show first paragraph */}
               <p className="mb-3 animate-fadeIn">{firstParagraph}</p>
 
-              {/* Collapsible part */}
               <div
                 className="transition-all duration-500 overflow-hidden"
-                style={{ maxHeight: expanded ? "2000px" : "0px" }}
+                style={{ maxHeight: expanded ? '2000px' : '0px' }}
               >
-                {/* Fade-in paragraphs */}
-                {restParagraphs.map((p, i) => (
-                  <p key={i} className="mb-3 animate-fadeIn">{p}</p>
+                {restParagraphs.map((paragraph, index) => (
+                  <p key={index} className="mb-3 animate-fadeIn">
+                    {paragraph}
+                  </p>
                 ))}
               </div>
 
-              {/* Read More Button */}
               <button
                 type="button"
-                onClick={() => setExpanded(!expanded)}
+                onClick={() => setExpanded((previous) => !previous)}
                 className={`mt-4 inline-flex items-center gap-1 font-semibold hover:opacity-80 transition ${
-				  theme === 'dark' ? 'text-[#D2A092]' : 'text-[#A85C53]'
-				}`}
+                  theme === 'dark' ? 'text-[#D2A092]' : 'text-[#A85C53]'
+                }`}
               >
-                {expanded ? "Show Less" : "Read More"}
+                {expanded ? 'Show Less' : 'Read More'}
+
                 <span
                   className={`transform transition-transform duration-300 ${
-                    expanded ? "rotate-180" : "rotate-0"
+                    expanded ? 'rotate-180' : 'rotate-0'
                   }`}
                 >
                   ▼
@@ -1064,6 +1056,7 @@ function SpeakerCard({
     </div>
   );
 }
+
 
 function SpeakerCardMobile({
   name,
@@ -1089,14 +1082,13 @@ function SpeakerCardMobile({
   const shouldCollapse = wordCount > 200;
 
   return (
-	  {/*<div className="block md:hidden relative overflow-hidden rounded-2xl border border-white/20 bg-white px-6 py-7 shadow-xl w-full mx-auto">*/}
 	<div
-  className={`block md:hidden relative overflow-hidden rounded-2xl border px-6 py-7 shadow-xl w-full h-full mx-auto transition-colors duration-300 ${
-    theme === 'dark'
-      ? 'bg-[#3A3533] border-[#5A4745]'
-      : 'bg-[#F9F4EE] border-[#DDCEC3]'
-  }`}
->
+	  className={`block md:hidden relative overflow-hidden rounded-2xl border px-6 py-7 shadow-xl w-full h-full mx-auto transition-colors duration-300 ${
+	    theme === 'dark'
+	      ? 'bg-[#3A3533] border-[#5A4745]'
+	      : 'bg-[#F9F4EE] border-[#DDCEC3]'
+	  }`}
+	>
 
       {/* fade-in animation */}
       <style>{`
